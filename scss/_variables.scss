@@ -1,0 +1,63 @@
+/* Fonts */
+$base-font-size-lg     : 1.0rem;
+$base-line-height-lg   : 1.3;
+$base-font-size-md     : 0.8rem;
+$base-line-height-md   : 1.1;
+$base-font-size-sm     : 0.6rem;
+$base-line-height-sm   : 1.0;
+$h2-font-size		   : 1.2rem;
+$h3-lg				   : 1.2rem;
+$h3-sm				   : 0.7rem;
+$h4-font-size		   : 0.9rem;
+$h5-font-size		   : 0.9rem;
+
+/* Text */
+$base-text-color    : black;
+$base-link-color    : #143456;
+
+/* Buttons  */
+$btn-font-size      : 1.0rem;
+$btn-font-size-sm	: 0.8rem;
+$btn-width			: 135px;
+$btn-width-sm		: 70px;
+/*$btn-height		: keep fluid ; */
+$btn-background     : hsl(293, 97%, 50%);
+$btn-text-color     : white;	
+
+/* Breakpoints */
+$min-width: 400px;
+$breakpoint-small : 400px;
+$breakpoint-medium: 750px;
+$breakpoint-large : 960px; 
+
+/* Fonts */
+$font-primary:  "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary:  "Tinos", "Georgia", Cambria, Times New Roman, Times, serif;
+$font-third: "Nova Mono";
+
+/* Headers */
+$first-color-header: rgba(238,110,255, .7);
+$second-color-header: hsl(348, 17%, 60%);
+
+/* Footer */
+$first-color-footer: white;
+$second-color-footer: #2A477F;
+$sticky-footer-height: 75px;
+$sticky-footer-margin: -75px;
+
+/*  SVG Variables */
+$first-color-SVG:	hsl(293,97%,50%);
+$second-color-SVG:	hsl(348,17%,60%);
+$svg-size-sm:		4rem;
+$svg-size-md:		5rem;		
+$svg-size-lg:		6rem;
+
+/* Grid Variables */
+$col3-height:		250px;
+$col4-height:		250px;
+$col3-margin-sm:	3px;
+$col4-margin-sm:	10px;
+$col3-margin-md:	10px;
+$col4-margin-md:	10px;
+$col3-margin-lg:	20px;
+$col4-margin-lg:	20px;

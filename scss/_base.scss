@@ -1,0 +1,479 @@
+/* apply a natural box layout model to all elements, but allowing components to change  */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body { 
+  min-width: $min-width; 
+  font-size: $base-font-size-lg;
+  font-family: $font-primary;
+  color: $base-text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+  text-size-adjust: 100%; 
+}
+
+.masthead {
+	height: 250px;
+	background: url(../img/winter1.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead2 {
+	height: 250px;
+	background: url(../img/winter2.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead3 {
+	height: 250px;
+	background: url(../img/winter3.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead4 {
+	height: 250px;
+	background: url(../img/winter4.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead5 {
+	height: 250px;
+	background: url(../img/winter5.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead6 {
+	height: 250px;
+	background: url(../img/winter6.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead7 {
+	height: 250px;
+	background: url(../img/winter7.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead8 {
+	height: 250px;
+	background: url(../img/winter8.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+
+.masthead9 {
+	height: 250px;
+	background: url(../img/winter9.jpg) no-repeat 50% 50%; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;	
+}
+.maintitle {
+	width: 100%;
+}
+
+.paulround {
+	border: 2px solid black;
+	border-radius: 50px;
+	vertical-align: middle; 
+	max-width: 100%; 
+	height: auto; 
+	-webkit-filter: drop-shadow(5px 5px 5px #222); 
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.box img {
+	vertical-align: middle; 
+	max-width: 100%; 
+	height: auto; 
+	-webkit-filter: drop-shadow(5px 5px 5px #222); 
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+footer {
+	@include linear-gradient($first-color-footer, $second-color-footer)
+}
+
+/* =Links */
+
+a,           
+a:hover,     
+a:focus,     
+a:hover, 
+a:active    { color: $base-link-color }
+/*
+img { 
+	vertical-align: middle; 
+	max-width: 100%; 
+	height: auto; 
+	-webkit-filter: drop-shadow(5px 5px 5px #222); 
+	filter: drop-shadow(5px 5px 5px #222);
+	margin: 20px 20px;
+	}
+
+.col4img {
+	margin: 0 auto;
+}
+
+hr      { border-top: 1px solid #ccc; display: block; height: 1px; border: 0; margin: 1em 0; padding: 0; }
+
+h1, h2, h3, h4, h5 ,h6 { }
+
+h1 { }
+h2 { font-size: $h2-font-size; margin-left: 20px; padding-bottom: 20px;}
+h3 { font-size: $h3-sm;}
+h4 { font-size: $h4-font-size;}
+h5 { font-size: $h5-font-size;}
+h6 { }
+*/
+ul, ol, dl  { }
+p           { }
+ul          { list-style: none;}
+
+strong { }
+em { }
+/*
+@media only screen and (min-width: $breakpoint-small) {
+	h3 {
+	font-size: $h3-sm;
+	}
+	p {
+	font-size: $base-font-size-sm;
+	line-height: $base-line-height-sm;
+	}
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+	h3 {
+	font-size: $h3-lg;
+	}
+	p {
+	font-size: $base-font-size-md;
+	line-height: $base-line-height-md;
+	}
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+	h3 {
+	font-size: $h3-lg;
+	}
+	p {	
+	font-size: $base-font-size-lg;
+	line-height: $base-line-height-lg;
+	}
+}
+
+
+
+
+/* =Forms
+------------------------------------------------------ */
+
+/*fieldset        {  }
+fieldset legend {  }
+
+button,     
+input,
+select,           
+textarea { }
+textarea { }
+
+::-webkit-input-placeholder { color: #000000; }
+:-moz-placeholder           { color: #000000; }
+::-moz-placeholder          { color: #000000; }
+:-ms-input-placeholder      { color: #000000; }
+input[placeholder],
+[placeholder]               { color: #000000; }
+
+
+/* = Form Input Styles
+---------------------------- */
+/*input { }
+input[type="text"] {  }
+input[type="checkbox"] {  }
+input[type="radio"] {  }
+input[type="submit"] {  }
+textarea {  }
+
+select                      { }
+
+/* SVG Setup */
+/*.accent .iconic * {
+	fill: $first-color-SVG;
+	stroke: $first-color-SVG;
+}
+
+.accent .iconic-property-accent {
+	fill: $second-color-SVG;
+	stroke: $second-color-SVG;
+}
+*/
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+.wrapper {
+    width: 90%;
+    max-width: 1081px;
+    margin: 10px auto;
+}
+.toggleMenu {
+    display:  none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+     background: #143456;  /* dark blue */
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 25em;
+}
+.nav a {
+    padding: 10px 15px;
+    color:#fff;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+    border-top: 1px solid #0F2B43;   /* darker blue */
+}
+.nav > li > .parent {
+    background-image: url("../img/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background: #2462B1;  /* lighter blue */
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+.nav li li li a {
+    background: #6388D3;   /* lighter blue */
+    z-index:200;
+    border-top: 1px solid #2760D4;
+}
+
+@media screen and (max-width: 768px) {
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("../img/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+/*  FORECAST  */
+
+#daySummaryIcon {
+	height: 100px;
+	width: 150px;
+	float: left;
+	margin-top: 15px; 
+	margin-left: 25px;
+	
+}
+
+#daySummaryDate p {
+	color: #2A477F;
+	font-size: 1.618rem;
+	padding: 5px 0 0 10px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#dayCurrentTemp p {
+	color: #2A477F;
+	font-size: 2.618rem;
+	padding: 0 0 0 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#daySummary p {
+	color: #2A477F;
+	font-size: 1rem;
+	padding: 17px 0 0 10px;
+}
+
+#daySummary ul{
+	color: #2A477F;
+	font-size: .8rem;
+	padding: 5px;
+	list-style:none;
+}
+
+.col-2{
+  width: 87px;
+  float:left;
+
+  height: 95px;
+}
+
+.col-footer{
+
+  clear: both;
+  height: 40px;
+}
+
+.main-content{
+  background-image: url(../img/forecastback.png);
+  width: 300px;
+  height: 225px;
+  float:left;
+  	-webkit-filter: drop-shadow(5px 5px 5px #222); 
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+
+/*** ICONS  ****/
+
+.clear-day {
+	background-image: url("../img/clear-day.png");
+	background-repeat: no-repeat;	
+}
+
+.partly-cloudy-day {
+	background-image: url("../img/partly-cloudy-day.png");
+	background-repeat: no-repeat;	
+}
+
+.clear-night {
+	background-image: url("../img/clear-night.png");
+	background-repeat: no-repeat;	
+}
+
+.partly-cloudy-night {
+	background-image: url("../img/partly-cloudy-night.png");
+	background-repeat: no-repeat;
+}
+
+.cloudy {
+	background-image: url("../img/cloudy.png");
+	background-repeat: no-repeat;
+}
+
+.wind{
+	background-image: url("../img/wind.png");
+	background-repeat: no-repeat;
+}
+
+.rain {
+	background-image: url("../img/rain.png");
+	background-repeat: no-repeat;
+}
+
+.fog {
+	background-image: url("../img/fog.png");
+	background-repeat: no-repeat;
+}
+
+.snow {
+	background-image: url("../img/snow.png");
+	background-repeat: no-repeat;
+}
+
+.sleet {
+	background-image: url("../img/sleet.png");
+	background-repeat: no-repeat;
+}
+
+.hail {
+	background-image: url("../img/hail.png");
+	background-repeat: no-repeat;
+}
+
+.thunderstorm {
+	background-image: url("../img/thunderstorm.png");
+	background-repeat: no-repeat;
+}
+
+.tornado {
+	background-image: url("../img/tornado.png");
+	background-repeat: no-repeat;
+}

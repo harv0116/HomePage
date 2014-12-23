@@ -1,0 +1,76 @@
+.view {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+}
+
+div .mask {
+	height: 240px;
+}
+
+.view .mask, .view .content {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+.view img {
+    display: block;
+    position: relative;
+}
+.view h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    position: relative;
+    color: #fff;
+    padding: 5px 10px 10px;
+    text-align: center
+}
+
+.view-sixth img { 
+    transition: all 0.4s ease-in-out 0.5s; 
+}
+.view-sixth .mask{ 
+    background-color: rgba(153,127,132, .7);
+    opacity:0;
+    transition: all 0.3s ease-in 0.4s;
+}
+.view-sixth h3{
+    opacity:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth p { 
+    opacity:0;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.view-sixth:hover .mask {  
+    opacity:1; 
+    transition-delay: 0s;
+}                                                                            
+.view-sixth:hover img { 
+    transition-delay: 0s; 
+}
+.view-sixth:hover h3 { 
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.1s;
+}
+.view-sixth:hover p { 
+    opacity:1; 
+    transform: scale(1);
+    transition-delay: 0.2s;
+}

@@ -1,0 +1,26 @@
+html, body {
+	height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+	margin-bottom: 	$sticky-footer-margin; 
+}
+.wrapper:after {
+  content: "";
+  display: block;
+}
+.foot, .wrapper:after {
+  /* .push must be the same height as footer */
+	height: $sticky-footer-height; 
+}
+
+
+
+@media only screen and (min-width: $breakpoint-small) {
+
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+
+}

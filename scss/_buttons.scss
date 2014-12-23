@@ -1,0 +1,30 @@
+/* Scss Document */
+
+.btn {
+	font-size: $btn-font-size;
+	width: $btn-width;
+	/*height: $btn-height;   not needed - keep fluid*/
+	background: $btn-background;
+	color: $btn-text-color;	
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+	.btn {
+		font-size: $btn-font-size-sm;
+		width: $btn-width-sm;
+	}
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+	.btn {
+		font-size: $btn-font-size;
+		width: $btn-width;
+	}
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+	.btn {
+		font-size: $btn-font-size;
+		width: $btn-width;
+	}
+}

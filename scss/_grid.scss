@@ -1,0 +1,50 @@
+.wrapper {
+	max-width: ( $breakpoint-small );
+	margin: 0 auto;
+}
+.row {	
+	@extend .clearfix;
+}
+.col-3 {
+	text-align: center;
+	/*height: $col3-height; */
+	@include equalSpaced(3, $col3-margin-sm, $breakpoint-small );
+	float: left;
+}
+
+.col-3front {
+	text-align: center;
+	height: $col3-height; 
+	@include equalSpaced(3, $col3-margin-sm, $breakpoint-small );
+	float: left;
+}
+.box svg {
+	height: $svg-size-sm;
+	width: $svg-size-sm;
+}
+.col-4 {
+	text-align: center;
+	height: $col4-height;
+	@include equalSpaced(4, $col4-margin-sm, $breakpoint-small );
+	float: left;
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+/* no change */
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+	.wrapper { max-width: $breakpoint-medium; }	
+	.col-3 { @include equalSpaced(3, $col3-margin-md, $breakpoint-medium); }
+	.col-3front { @include equalSpaced(3, $col3-margin-md, $breakpoint-medium); }
+	.box svg { height: $svg-size-md; width: $svg-size-md; }	
+	.col-4 { @include equalSpaced(4, $col3-margin-md, $breakpoint-medium); }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+	.wrapper { max-width: $breakpoint-large; }
+	.col-3 { @include equalSpaced(3, $col3-margin-lg, $breakpoint-large); }
+	.col-3front { @include equalSpaced(3, $col3-margin-lg, $breakpoint-large); }
+	.box svg { height: $svg-size-lg; width: $svg-size-lg; }	
+	.col-4 { @include equalSpaced(4, $col3-margin-lg, $breakpoint-large); }
+}
