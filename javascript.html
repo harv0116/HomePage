@@ -1,0 +1,1826 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Abel|Tinos" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+
+<title>Paul Harvey - Javascript / JQuery / JQueryUI / JQuery Mobile</title>
+</head>
+
+<body>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="wrapper">
+	<header class="masthead8">
+    	
+    </header>
+    
+	<nav>
+        <a class="toggleMenu" href="#">Paul Harvey Menu</a>
+        <ul class="nav">
+        	<li class="test">
+            <a href="index.html">Home</a>
+            <li  class="test">
+            <a href="#">Courses</a>
+            <ul>
+                <li>
+                    <a href="#">Semester One - Sept 2014</a>
+                    <ul>
+                        <li><a href="mad9010.html">Graphics Technologies</a></li>
+                        <li><a href="mad9013.html">Cross Platform Web Design</a></li>
+                        <li><a href="mad9014.html">Cross Platform App Design I</a></li>
+                        <li><a href="mad9111.html">Computer Hardware and Networking</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Semester Two - Jan 2015</a>
+                    <ul>
+                        <li><a href="#">User Interface Design</a></li>
+                        <li><a href="#">Object Oriented Programming</a></li>
+                        <li><a href="#">Cross Platform App Design II</a></li>
+                        <li><a href="#">Server Side Tech for Mobile</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <a href="#">Learning</a>
+            <ul>
+                <li><a href="responsive.html">Responsive Web Design</a></li>
+                <li><a href="javascript.html">Javascript / JQuery / JQueryUI / JQuery Mobile</a></li>
+                <li><a href="#">HTML 5 / CSS / SASS-SCSS / Bootstrap</a></li>
+                <li><a href="#">Ajax / JSON</a></li>
+                <li><a href="#">Illustrator / Photoshop / SVG</a></li>  
+                <li><a href="#">LAMP / MAMP / WAMP</a></li>
+                <li><a href="#">Networking / VMWare / GIT</a></li>
+                <li><a href="#">Cordova</a></li>       
+            </ul>
+            </li>
+            <li>
+            <a href="#">About</a>
+            <ul>
+                <li><a href="about.html">Career thus far</a></li>
+                <li><a href="#">Links</a></li>        
+            </ul>
+            </li>
+        </ul>
+	</nav>
+    
+    <section class="maintitle">
+    	<h1>Javascript / JQuery / JQueryUI / JQuery Mobile</h1>
+    </section>    
+    
+    <section class="focal row">
+    <div class="col-1">
+        <h3>Programming Basics I</h3>
+        <h5>Variables</h5>
+        <p>Core to every programming language is the concept of variables. Variables are containers for holding bits of information that you need for your programs. For example, if you were writing a casual game and wanted to keep track of the users score, then you would create a variable to hold that number.</p>
+        <p>A good analogy for a variable is a box. You can get boxes in different sizes which hold different types of things. You can add a label to a box to remind you of what is inside the box. It is always possible to add something else into the box or replace what is in the box with something new.</p>
+        <p>To create a variable in Javascript you would use a keyword "var". This is the command to create an empty box. 
+        After the word var you give a name to the variable, just like putting a label on a box.<p>
+        <pre><code>var age;</code></pre>
+        <p>This would create a variable with the name "age". Notice, there is a semi-colon at the end of the line. The semi-colon tells the Javascript interpreter that you have reached the end of the command. Now, whenever you use the word "age" in your program you will be referring to that variable.</p>
+        <p>If you want, you can put something into the variable at the same time as creating it.</p>
+        <pre><code>var age = 25;</code></pre>
+        <p>This would create a variable called "age" and place the number 25 into the variable at the same time.
+        Later on you can replace the contents of the variable "age" with another value.</p>
+        <pre><code>age = 42;</code></pre>
+        <p>Notice that this time we don't use the keyword "var". "var" is only required when you first create the variable.</p> 
+        <a href="http://youtu.be/B0sSuw9ZImA">http://youtu.be/B0sSuw9ZImA</a>   
+        
+        <a href="http://youtu.be/O52rxjZWndE">http://youtu.be/O52rxjZWndE</a>    
+        
+        <h3>Arrays</h3>
+        <h5>Javascript Arrays</h5>
+        <p>Arrays are one of the main datatypes that you get in Javascript, as well as other programming languages. A Javascript array is essentially a numbered list. When you want to keep track of a collection of things then an Array is a good candidate for a datatype to use.</p>
+        <p>If we use the analog that a variable is a box which can hold things, a Number, a String, a Date, or an HTML Element, then creating an Array is like taking a whole bunch of boxes and taping them all together. Once you tape all the boxes together then you can move the group around together as one unit. There will be one label that refers to the collection of boxes. We will just refer to the individual boxes by number.</p>
+         <pre><code>var names = new Array("Christine", "Wendy", "Jennifer"); 
+         alert( names[0] ); 
+         //this would show Christine alert( names.length ); 
+         //this would show 3 names.push("Richard"); 
+         //adds the name Richard to the end of the list names.push("Chen"); //adds the name Chen to the end of the list 
+         //the array will now contain the names Christine, Wendy, Jennifer, Richard and Chen, in that order
+         names[1] = "Chad"; //this will replace the name Wendy with the name Chad 
+         </code></pre>
+        <p>The command new Array( ) is what creates an empty array. If we add some comma separated values between the opening and closing parentheses then those items will be loaded into the array.</p>
+        <p>If you want to access any one of the items from the array then we use the variable name followed by a set of square brackets and a number inside the square brackets.</p>
+        <p>The push( ) method allows you to add an item to an array.</p>
+        <p>The pop( ) method allows you to remove the last item from an array.</p>
+        <p>The length property will tell you how many items are in the array.</p>
+        <p>The following video demonstrates using live code samples in the Javascript console to work with arrays.
+        <a href="http://youtu.be/ojTswQiDWx0">http://youtu.be/ojTswQiDWx0</a></p>  
+        <p>Arrays only have the one built-in property: length, but they have several built-in methods that you can use: push( ), pop( ), shift( ), unshift( ), sort( ), slice( ) and splice( ).</p>
+        <p>The command new Array( ) will create a new array. However, there is a shortcut for that. Using two square brackets is the shorthand for creating a new array.</p>
+        <pre><code>var names = [ ];
+        var names = new Array( );
+        The above two lines of code do the exact same thing. They both create a new empty array. With either command we can add a list of items that we want in the array, inside the brackets.
+        var names = ["thing1", "thing2"];
+        var names = new Array("thing1", "thing2");
+        </code></pre>
+        
+        <h3>Datatypes</h3>
+        <h5>Javascript Datatypes</h5>
+        <p>Variables in Javascript are "softly typed". This means that Javascript is able to figure out what kind of container you need to hold the value that you are passing to the variable. For example, if you write this:</p>
+        <pre><code>var age = 12;</code></pre>
+        <p>then the Javascript interpreter can understand that it needs a container that is capable of holding numbers. It also means that if you replace that number with a String value or a Date object then the container needed to hold the new value will be updated. However, this is bad programming practice and it won't work in the other languages that we will be studying.</p>
+        <p>So, the main reason we have the different types of variables in Javascript is that they will have different properties and capabilities. A String object can be converted to upper case. A number has no idea what it means to be upper or lower case.</p>
+        <p>There are three basic datatypes in Javascript:</p>
+        <p>String - a text value. Basically, anything you type that isn't just a number. When assigning these values you need to put quotation marks around the values.</p>
+        <p>Number - any type of numeric value, with or without decimal places</p>
+        <p>Boolean - true or false</p>
+        <p>There are many more complex datatypes in Javascript. Here are just a few:</p>
+        <p>Array - A list of values</p>
+        <p>Object - A list like container that can be used to hold many other datatypes</p>
+        <p>Date - a date object which can hold dates, times, or any combination of those elements</p>
+        <p>HTML Element - Any piece of HTML that you find on a webpage.</p>
+        <p>window - This object represents the browser</p>
+        <p>document - This is the visible window holding the web page. It also represents the HTML <body> tag.</p>
+        <p>There is a long list of complex datatypes in Javascript and you can also create your own, if needed.</p>
+        
+        <h3>Objects</h3>
+        <h5>Javascript Object Datatype</h5>
+        <p>Similar to Javascript Arrays, we have Javascript Objects. While Arrays are a numbered list of items, Objects are a list of items where there is a reference name for each item in the Object. You can still use one single variable to refer to the collection but inside the variable you use names to access the items.</p>
+        <p>Example:</p>
+        <pre><code>var student = new Object("name":"Simon", "id":123, "email":"simon@school.org" );
+        //this will create a variable called student which has three items inside it.
+        alert( student["name"] );   // will display Simon
+        alert( student["id"] );   //will display 123
+        alert( student["email"] );   //will display simon@school.org
+        //to change a value
+        student["id"] = 234;
+        student["email"] = "simon@work.org";
+        //To add a new item to the object
+        student["age"] = 22;
+        </code></pre>
+        <p>Just like Arrays, there is also a shorthand for creating an Object. The shorthand for creating an Object is two curly braces.</p>
+        <pre><code>var student = {"name":"Jimmy", "id":937 };</code></pre>
+        <p>Typically an Array will contain a numbered list of items which of the same datatype. i.e. A list of numbers, a list of dates, or a list names. With Objects, it is more common to have a list of items which are of several datatypes. Eg: A student Object which contains a name, id, email, address and age. You can have items of any datatype inside an Object. That means that you can even have an Array inside an Object or a series of Objects inside an Array.</p>
+        <pre><code>var students = [{"name":"Timmy", "id":34}, {"name":"Kyle", "id":65}, {"name":"Stan", "id":63}, {"name":"Eric", "id":12}];</code></pre>
+        <p>The above example creates one variable called "students". This variable is an Array which means that it is a numbered list of items. Each item in this list is an Object which contains a "name" and an "id". To access any of the items in this Array we need to use the variable "students".  After the square brackets with the number to reference one of the items, we would use another set of square brackets with the name of the property we want to access.</p>
+        <pre><code>alert( students[1]["name"] );   //this would display Kyle
+        alert( students[2]["id"] );    //this would display 63
+        alert( students[0]["name"] );    //this would display Timmy
+        </code></pre>
+        <h3>Properties, Methods and Events</h3>
+        <h5>Objects - Properties, Methods and Events</h5>
+        <p>The basis for all the work that we are going to do in Javascript is that all Objects can have properties, methods and events. Most of the time we are going to be working with HTML Element objects, like HTML Paragraph Element (Links to an external site.), HTML Input Element (Links to an external site.) or HTML Image Element (Links to an external site.) but there will be non-HTML objects like Arrays (Links to an external site.) that we work with too.</p>
+        <p>All these objects have different capabilities and uses which means different properties, methods and events.</p>
+        <h5>Properties</h5>
+        <p>Properties are things about an object that you can measure, use to describe, or quantify the object. Eg: A person has a height and a weight. The height and weight are properties. An HTML Paragraph Element has an id attribute, title attribute, and CSS style properties. Those are all properties too.</p>
+        <h5>Methods</h5>
+        <p>Methods are things that an object can do. A car can accelerate. A person can jump or speak. These are methods. An HTML Paragraph Element can add text or another HTML Element inside itself. Methods can be recognized because they have a pair of parentheses at the end of the method name. Eg:  addChild( ).</p>
+        <h5>Events</h5>
+        <p>Events are things that happen to an object. A person can be woken from sleep. A car can be unlocked. An HTML Image Element can have a new image loaded.</p>
+         
+        <pre><code> 
+        var paras = document.getElementsByTagName("p");
+        var p = paras[0];
+        var img = new Image();
+        img.src = "myimage.png";
+        p.addChild( img );
+        img.onclick = doSomething;
+        </code></pre> 
+        <p>This example shows how you would create a reference to the first paragraph tag on the page, add an image tag inside that paragraph, set a source for the image and then attach a click event which will call a function when a user clicks on the image.</p>
+        
+        <h3>Document Object Model</h3>
+        <h5>Document Object Model (DOM)</h5>
+        <p>The Document Object Model refers to the list of HTML related objects which make up the visible part of web pages as well as the properties and capabilities of the browser.</p>
+        <p>window</p> 
+        <p>This is the root object for everything. All other objects in the DOM are inside the window object. So, using dot notation it means that you should start every single DOM reference or command with the word window. However, in order to save time and space, the Javascript interpreter assumes that every line is going to start with window so you don't have to actually write it.</p>
+         
+        <p>window.document</p> 
+        The document object is the start to all the visual content on the page. It is analogous to the HTML body tag. Remember, if you simply write document instead of window.document that is fine. "window" is assumed to be in front of most objects.
+        
+        <p>window.navigator</p> 
+        The navigator object contains all the details about the browser. Which version, user agent, operating system and so on. Remember, if you simply write navigator instead of window.navigator that is fine. "window" is assumed to be in front of most objects.
+         
+        <p>window.history</p> 
+        The history object contains the URLs that in your browser's history. If the user is able to click the back or forward buttons then whatever values are stored there can be accessed through the history object. Remember, if you simply write history instead of window.history that is fine. "window" is assumed to be in front of most objects.
+        <p>window.location</p> 
+        The location object contains all the information about the current URL. If you need to know whether a page is HTTP or HTTPS, or the hash value or the query string, then use the location object. Remember, if you simply write location instead of window.location that is fine. "window" is assumed to be in front of most objects.
+        
+        <h5>HTML Elements inside of window.document</h5>
+        <p>Once you use your dot notation and drill down inside of the window.document object you are now dealing with the actual HTML on the web page. Now you can manipulate everything on the page and work on the user interaction.</p>
+        <pre><code>
+        var wrap = document.getElementById("wrapper");   //this will fetch the HTML element with the id "wrapper"
+         alert( wrap.tagName );  //this will tell us what the HTML Tag belonging to the wrapper element is.
+         //the wrap variable contains an HTML Element which means that it has access to all the HTML Element properties, methods & events
+         var img = document.createElement("img");    //create a new image element. We can also use the new Image() command
+         var p = document.createElement("p");    //create a new empty paragraph and put it inside the variable p
+         wrap.appendChild(p);    //place the new paragraph inside the wrapper element
+         p.appendChild( img );    //place the new image inside the new paragraph
+         </code></pre>
+        <p>HTML Elements have many properties methods and events. However, here is a few of the more common ones.</p>
+        
+        <h5>Properties</h5>
+        <p>id - the id of the element</p>
+        <p>title - the mouseover text for the element</p>
+        <p>style - contains all the CSS properties</p>
+        <p>className - the CSS classname for the element</p>
+        <p>tagName - the HTML tag name</p>
+        <p>innerHTML - the text and HTML nested inside the element</p>
+         
+        <h5>Methods</h5>
+        <p>appendChild( ) - add an HTML element or text node inside the current HTML element </p>
+        <p>removeChild( ) - remove a text or html node from inside the current HTML element</p>
+        <p>getElementById( ) - find an HTML element by its id</p>
+        <p>getElementsByTagName( ) - find a list of HTML elements which match the tag name</p>
+        <p>createElement( ) - this method belongs to the document object only</p>
+        <p>createTextNode( ) - this method belongs to the document object only</p>
+         
+        <h5>Events (old Javascript version)</h5>
+        <p>onclick - trigger some action when the user clicks on the element</p>
+        <p>onmouseover - trigger some action when the user moves their mouse over the element</p>
+        <p>onmouseout - trigger some action when the user moves their mouse off the element.</p>
+        <p>onfocus - when a user clicks or tabs to an HTML element and away from some other element</p>
+        <p>onblur - when the user clicks or tabs away from an HTML element. Eg: when the user is tabbing through the form elements they are blurring and focusing on each one in turn.</p>
+        <p>onload - when a page or image finishes loading.</p>
+         
+        <p>The thing to remember with the Events is that the newer browsers support attaching events through this method:</p>
+        <pre><code>document.addEventListener("click", myFunc);</code></pre>
+         
+        <p>The name of the event is written without the "on" as the first argument for the method.
+        The last thing worth noting here is the command to create a new HTML Element of any type or a new text node (chunk of text to place on a web page).</p>
+        <pre><code>var elem = document.createElement("h1");    //this would create a new HTML Heading Level One element.
+         var txt = document.createTextNode("this is the text");   //this creates some new text which can be added to an HTML element
+         elem.appendChild( txt );    //this will put the new text inside the h1 element
+        </code></pre>
+        
+        <h3>Javascript Functions</h3>
+        <h5>Javascript Functions</h5>
+        <p>When you are writing CSS files you group together collections of style property and value pairs as tag, class or id styles. The collection is held inside of a pair of curly braces.</p>
+        <p>In Javascript we group together lists of actions we want to take at a certain time and call the grouping a function.</p>
+        <p>CSS Example</p>
+        <pre><code>
+        .red{
+            color: red;
+            border: 1px solid #333;
+        }
+        Javascript Example
+        function doSomething( ){
+            var wrap = document.getElementById("wrapper");
+            wrap.appendChild( document.createTextNode("Text inside the wrapper") );
+        }
+        </code></pre> 
+        <p>For the CSS style you place a name in front of the opening curly brace. For the Javascript you use the keyword function followed by a name. The last part of the Javascript function name is an opening and closing parentheses. In the above example "doSomething( )" is the whole name.</p>
+        
+        <h5>Function parameters / arguements</h5>
+        <p>The parentheses at the end of the function name are where we would place extra information which is needed to complete the function. Functions are like custom user-created methods. Built-in objects can have properties, methods and events. Those methods have parentheses at the end of the name. Sometimes a method needs a piece of information in order to work properly. Functions are the same way. Sometimes a function can run without any extra information. Other times you have to pass a String or a Number to the function.</p>
+        <p>Example with parameters</p>
+        <pre><code>
+        function addItUp( num1, num2 ){
+            var result = num1 + num2;
+            alert( "If you add " + num1 + " plus " + num2 + " then the result is " + result );
+        }
+        </code></pre>
+        <p>This function "addItUp( )" will take the values of the two numbers passed in through the parameters called num1 and num2, add them together and then display the final result in a pop up message box.</p>
+        <p>If you want to call the function from somewhere in your code this is how you would do that:</p>
+        <pre><code>addItUp( 7, 3);</code></pre>
+        <p>This would send the number 7 into the variable num1 and the number 3 into the variable num2. Alternatively, we could have put other variables in place of the numbers and this would still work.</p>
+        <pre><code>
+        var a = 6;
+        var b = 4;
+        addItUp( a, b );
+        </code></pre>
+        <p>This would do the same thing as the example above. The only difference is that we passed variables to the function instead of numbers. The end result is the same.</p>
+         <p><a href="http://youtu.be/CJWmQ_utwUM">http://youtu.be/CJWmQ_utwUM</a> 
+          
+         <p>Below is the Codecademy page on creating functions. This is an interactive tool to learn about functions:</p>
+         <a href="http://www.codecademy.com/courses/functions-in-javascript-2-0/0">Functions: 1. Defining Functions</a>
+        
+        <h3>Calling Functions from Events</h3>
+        <h5>Using Events to Trigger Functions</h5>
+        <p>Javascript is used to make things happen on web pages in response to user interactions. These user interactions are known as events. An event can be used as a trigger to make something happen on a web page. Our first example of this happening is the window.onload event which triggers our initial script on every page.</p>
+        <pre><code>
+        window.onload = function(){
+            var wrap = document.getElementById("wrapper");
+            wrap.innerHTML = &quot;&lt;h1&gt;The new title&lt;/h1&gt;&quot;;
+        } 
+        </code></pre>
+        <p>In this example, the window.onload event is pointing to an anonymous function. The function is called anonymous because it has no name that you could use to call it a second time.</p>  
+        <pre><code>
+        function( ){   
+            //this is an anonymous function. It can only be run the one time  it is called.
+        }
+        function doSomething( ){
+           //this function is NOT anonymous, which means that we could call it and run it multiple times.
+        }
+        </code></pre>
+        <p>If we wanted to call a named function by attaching it to an event it would be like this:</p>
+        <pre><code>
+        window.onload = init;
+        function init( ) {
+             //this function will run when it is triggered by the window.onload event.
+            //However, we can also attach it to other events or call it all on its own.
+        }
+        </code></pre>
+        <p>So, now we can repeat this process with any object, one of its events, and a function. Let's say that we want to make something happen when a user clicks on the first h1 tag on the page.</p>
+        <pre><code>
+        var h1List = document.getElementsByTagName("h1");
+        h1List[0].onclick = myFunc;
+        </code></pre>
+        <p>This would make a function called "myFunc" run when the user clicks on the first h1 tag on the page.
+        Now, this code really does need to be run only AFTER the web page finishes loading. Otherwise, the browser may not have loaded the h1 tag yet. So, we add the window.onload event trigger so it runs first and THEN the h1 onclick event trigger gets added to the h1 tag.</p>
+        <pre><code>
+        window.onload = init;
+        function init( ){
+            var h1List = document.getElementsByTagName("h1");
+            h1List[0].onclick = myFunc;
+        } 
+        function myFunc( ){
+            //this function runs when the user clicks on the h1 tag.
+            //the click event will only become active AFTER the page has finished loading because that 
+            //is when the function which activates the click is called.
+        }
+        </code></pre>
+        <p>The video below gives more examples of chaining events together to make things happen in a sequence.</p>
+        <a href="http://youtu.be/MSaOHWQ3dS8">http://youtu.be/MSaOHWQ3dS8</a>  
+        <p>In this video the last couple lines of code were cut off.
+        The last function was:</p>
+        <pre><code>
+        function funcFour(){
+            var p4 = document.getElementById("four");
+            p4.style.backgroundColor = "#e4e4e4";
+        }
+        </code></pre>
+        <h3>Keyword "this"</h3>
+        <h5>Javascript and the keyword "this"</h5>
+        <p>When writing Javascript functions there are going to be times when you will want to know which object's event has triggered a function. For example, let's say that we have a function which runs whenever a user clicks on a paragraph. Inside that function we want to know which paragraph was clicked.</p>
+        <pre><code>
+        var ps = document.getElementsByTagName("p");  //assume that we know that there are three paragraphs
+        ps[0].onclick = doSomething;
+        ps[1].onclick = doSomething;
+        ps[2].onclick = doSomething;
+        function doSomething( ){
+            //this function will run when any of the three paragraphs are clicked.
+        }
+        </code></pre>
+        
+        <p>Using the code above as our starting point, how would we figure out which paragraph was clicked?
+        This is where the keyword this comes into play. Inside a function, the keyword this represents the object whose event triggered the function to run. So, a user clicking on a paragraph calls the function doSomething. onclick is the event, doSomething is the function and the paragraph is the object.</p>
+        <p>If paragraph one is clicked then "this" inside the function represents paragraph one.</p>
+        <p>If paragraph one is clicked then "this" inside the function represents paragraph two.</p>
+        <p>If paragraph one is clicked then "this" inside the function represents paragraph three.</p>
+        <pre><code>function doSomething( ){
+            this.style.backgroundColor = "olive";
+        }</code></pre>
+        <p>This technique can be used regardless of the event which is triggering the function and regardless of the number of items which share the function. As long as you use the structure object.onEvent = functionName; then you will be able to use the keyword this inside the function to refer back to the object attached to the event.</p>
+        <a href="http://youtu.be/Ye3-njYkXtI">http://youtu.be/Ye3-njYkXtI</a>  
+        
+        <h3>Variable Scope</h3>
+        <h5>Variable Scope</h5>
+        <p>When you are creating variables in Javascript they can have two different kinds of scope - global or local.</p>
+        <p>A variable is said to have global scope when it can be seen by and shared by all functions. These variables must be declared outside of any function.</p>
+        <p>A variable is said to have local scope when it is declared inside of a function. These variables only exist and can only be accessed inside of the function where they were declared.</p>
+        <pre><code>var bigGuy = 1;  //this variable is global
+        function one( ){
+            var localDude = 3;   //this variable is local
+            alert( bigGuy + " " + localDude);
+            //this would display "1 3"
+        }
+        function two( ){
+            alert(bigGuy + " " + localDude);
+            //this will display "1 undefined"
+        }</code></pre>
+        <p>As you can see, in the second function you can alert the value of bigGuy but NOT localDude. localDude only exists in the first function.</p>
+        
+         
+        <h3>If statements and for loops</h3>
+        <h5>IF statement</h5>
+        <p>If statements are how we get our programs to make decisions. Let's say we are building an app to book appointments. The user types in the time that they want to arrive and click the submit button.</p>
+        <p>Unfortunately, the user entered 8:00 pm as the time they want to arrive and the shop closes at 6:00 pm. In order to check and see if they entered the proper time we need to use an if statement. Here is a simple example of one in use.</p>
+        <pre><code>var userInput = 8; //this will represent the time that the user entered.
+        var closingTime = 6; //this is our 6pm closing time
+        if( userInput > closingTime ){
+            alert("We are sorry but we are closed at that time.");
+        }else{
+            bookAppointment( userInput );
+            //the time is less than 6 so we call the function to book the appt.
+            //we are also passing the value the user entered to the function.
+        }
+        </code></pre>
+        <p>Here is a video with a few more variations and possibilities for if statements:</p>
+        <a href="http://youtu.be/xa-lW4nIF-M">http://youtu.be/xa-lW4nIF-M</a>  
+         
+        <h5>FOR loops</h5>
+        <p>For loops are a great time saver for programming. When you have to do a repetitive task you can put that code inside of a loop and tell the program how many times to run that task / code.</p>
+        <p>If you had to change the background colour of each paragraph a user clicks then you would need to add the onclick event listener to each paragraph and then write the function to change the background colour. We can use the keyword this so we only have to write one function. However, we still have to add the onclick listener to each paragraph. If we have two or three or four paragraphs it's not a big deal. We just write the two, three or four lines of code.</p>
+        <p>However, if the page has 50, 60, or 100 paragraphs this becomes a real pain. Even worse, is the situation where we don't know how many paragraphs there are. Let's look at the code to deal with this worst case situation.</p>
+        <pre><code>
+        function init( ){
+            var paragraphs = document.getElementsByTagName("p");
+            var numParagraphs = paragraphs.length;  //get the length property from the array
+            for( var i=0; i < numParagraphs; i++){
+                paragraphs[i].onclick = changeColour;
+            }
+        }
+        function changeColour(){
+            this.style.backgroundColor = "goldenrod";
+        }
+        </code></pre>
+        <p>And that's it. This code will work for an unlimited number of paragraphs. Every paragraph will have an onclick listener which calls the function changeColour. That function will figure out which paragraph was clicked and change the background colour for that one paragraph.</p>
+        <p>Here is a short video to explore more about that first line of the for loop.</p>
+        <a href="http://youtu.be/leRuGqZqWQA">http://youtu.be/leRuGqZqWQA</a>  
+        
+        <h5>Function return values</h5>
+        <h3>Function Return Values</h3>
+        <p>Very often when you run a function it is just a series of commands that you want to run at the same time. As long as the commands are run then you don't really care about hearing back from the function. There won't be any information that has changed which you need to know about. There won't be any values which were calculated in the function which need to be sent back to the object which called the function.</p> 
+        <p>However, sometimes there will be a need to return a value from a function. There will be occassional times when you do need to know when a function is complete. If this is the case then we will use the keyword return.</p>
+        <p>The keyword return tells the function to:</p>
+        <ol><li>Stop running immediately</li>
+        <li>return a single value of any datatype to whichever object called the function.</li></ol>
+        <p>Here is an example of return in use:</p>
+        <pre><code>
+        function doSomething( ){
+            var p = document.getElementById("p");
+            p.style.backgroundColor = "khaki";
+            return true;
+        }
+        </code></pre>
+        <p>The above example sends a Boolean value of true back to whatever object called the function doSomething( ). The value returned could have been anything. It could have been a Number, a String, a Date, an Array, an Object or an HTML Element.</p>
+        <h5>Common Uses for Return Values</h5>
+        <p>There are several common uses for Javascript return values. The first is returning the value of a calculation. Add Numbers or combine Strings and then send the result back.</p>
+        <pre><code>
+        var total = addNumbers( 5, 6 );
+        function addNumbers( a, b ){
+            var c = a + b;
+            return c;    //send the value of c back to the variable "total"
+        }
+        </code></pre>
+        <p>A second common use for a return value is to control whether or not the browser completes a form submission or a link click.  For example, if we had this link in our HTML:<p>
+        <pre><code>
+        &lt;a id=&quot;google&quot; href=&quot;http://www.google.ca&quot;&gt;Go To Google&lt;/a&gt;
+        </code></pre>
+        Then we wanted to control whether or not the user could go to that link depending on the value of a variable.
+        <pre><code>
+        var ga = document.getElementById("google");
+        ga.onclick = checkLink;
+        function checkLink( ){
+            if( test > 1 ){
+                return true;  // the browser WILL follow the link
+            }else{
+                return false;  // the browser will NOT follow the link
+            }
+        } 
+        </code></pre>
+        <p>Our function checkLink has two return statements. However, since they are wrapped inside of an if statement only one of them will actually run. The function will return either the value true or the value false. If false gets sent back to the anchor object, then clicking the link will not work. The line ga.onclick = checkLink means that the object ga (the anchor with the id google) is who is calling the function. Therefore it gets the return value.</p>
+        
+        <h3>Javascript Interactions</h3>
+        <h5>Javascript Interacting with HTML</h5>
+        <p>The real purpose of Javascript is to allow us to interact with users on our websites and to manipulate the content on the page. </p>
+        <p>Users take actions to interact with the page. These actions are called "EVENTS". Clicking on something or moving your mouse over something is an "EVENT".
+        We can connect an EVENT to a Javascript function and make that function run when the EVENT is triggered by the user.</p>
+        
+        <h5>Targetting Elements</h5>
+        <p>To capture an event from the user we need to tell HTML elements to listen for the EVENT.</p>
+        <p>So, we need to be able to target individual elements so that we can tell them to listen for the EVENT. There are two basic methods that we will use to target elements - querySelector( ) and querySelectorAll( ). Both of these methods belong to our document object.</p>
+        <p>document.querySelector( ) - locates the first element that matches the CSS selector that we pass in.</p>
+        <p>document.querySelectorAll( ) - locates ALL the elements which match the CSS selector that we pass in.</p>
+        <pre><code>
+        var listOfParagraphs = document.querySelectorAll("p");
+        //finds ALL the paragraphs on our web page
+        var firstNavbarLink = document.querySeletor("a.navbtn");
+        //finds the very first &lt;a class=&quot;navbtn&quot;&gt;&lt;/a&gt; on the page.
+        </code></pre> 
+        <h5>Triggering Events</h5>
+        <p>Once we have an element then we can attach the event listener to it and pass it the name of the function to call.</p>
+        <pre><code>
+        function doSomethingCool( ){
+          //does something cool
+        }
+        var firstParagraphInFooter = document.querySelector(".footer p");
+        firstParagraphInFooter.onclick = doSomethingCool;
+        </code></pre> 
+        <p>This code sample will add a click event listener to the first paragraph found in an element with the class name "footer". Then it will add a click listener to it which will call the function doSomethingCool( );</p>
+        <p>The function doSomethingCool( ) will only run WHEN the user clicks on it. And it will run EVERY time the user clicks on it.</p>
+         
+        <p>Here is a short video showing a demo of these concepts.</p>
+        <a href="http://youtu.be/Xiw4WqkzPQc">http://youtu.be/Xiw4WqkzPQc</a> 
+         
+        <h3>Dynamically Building new HTML</h3>
+        
+        <h5>Creating New HTML</h5>
+        <p>The document object has a built-in methods for creating new HTML tags and new Text nodes.</p>
+        <pre><code>var newP = document.createElement("p");</code></pre>
+        <p>This would create a new HTML Paragraph tag and store it inside the variable newP. It is important to note however that although we have created a new HTML Element, the element has not been added to the document yet. If we want to add it to the page then we use the appendChild( ) method.</p>
+        <pre><code>var head = document.getElementById("header");
+        head.appendChild( newP );</code></pre>
+        <p>This code will find the header element and add our new paragraph element to the header. </p>
+        <p>The document.createElement( ) method can be used to create any HTML element from paragraphs to headers to anchors to form elements. Either before or after you add the new element to the page you can add any attributes you want. Now, there is a createAttribute( ) method but we don't need to use that to create the attributes.</p> <p>Just do the following:</p>
+        <pre><code>newP.title = "This is the mouseover text for the new paragraph";
+        newP.id = "myPara";
+        newP.className = "sideAd"; //css class
+        newP.style.backgroundColor = "#FFCC00";
+        </code></pre> 
+         
+        <h5>Adding New Text to WebPages</h5>
+        <p>To add HTML, we use the document.createElement( ) method. To create a new textnode which we can then place inside of an HTML Element we would do this:</p>
+        <pre><code>
+        var newTxt = document.createTextNode("This is my new text content");
+        var newP = document.createElement("p");
+        newP.appendChild( newTxt );
+        </code></pre>
+        <p>As you can see we use the appendChild( ) method to add the text to the paragraph, the same way we used the appendChild( ) method to add the paragraph to the header element.</p>
+         <a href="http://youtu.be/agtDCYOQYto">http://youtu.be/agtDCYOQYto</a>  
+         
+        <h5>Removing HTML Elements</h5>
+        <p>So, dynamically building HTML elements is just a simple matter of using document.createElement( ) and element.appendChild( newElement ). If you want to remove an HTML element from the page then we will use the removeChild( ) method. This method requires us to know two things, the element we want to remove and the element which contains the thing being removed.</p>
+        <p>So, using this HTML</p>
+        <pre><code>
+        &lt;header id=&quot;header&quot;&gt;
+            &lt;p id=&quotoldPara&quot;&gt;This is the paragraph to be removed&lt;/p&gt;
+        &lt;/header&gt;
+        </code></pre>
+        <p>Here is our script to remove the paragraph from inside the header.</p>
+        <pre><code>
+        var head = document.getElementById("header");
+        var badP = document.getElementById("oldPara");
+        head.removeChild( badP );
+        </code></pre>
+        
+        <h3>Working with String methods</h3>
+        <h5>Javascript String Methods</h5>
+        <p>When you are dealing with user input from a web page or a web app then you are dealing with Strings. Everything that comes out of a form is a String object. It doesn't matter if the user typed letters or numbers, it is always a String.</p>
+        <p>When creating Strings in Javascript we can do that in one of three ways.</p>
+        <pre><code>
+        var s1 = "my first string";   //a new string
+        var s2 = new String("my second string");   //a new string
+        var s3 = document.username.value;    //value from a form field
+        </code></pre>
+        <p>Any one of the Strings above can access any of the String methods. The fact that they are String objects means that they automatically have access to the built-in methods.</p>
+        <p>One method is toUpperCase( ). This method will convert the String into uppercase. If you want to store the uppercase version of the String to use later then you need to put it into a variable.</p> 
+        <pre><code>
+        s1 = s1.toUpperCase( );   //converts s1 to uppercase and stores the uppercase version back inside of s1
+        s2 = "Another string".toUpperCase( );   //this will convert "Another string" to uppercase and save it in s2
+        s3 = document.username.value.toUpperCase( ); //will convert the value from the form field to uppercase and save it in s3
+        </code></pre>
+        <p>As long as the word immediately before "toUpperCase( )" is a String object then you can use the method.</p>
+         
+        <p><a href="http://dochub.io/#javascript/string">http://dochub.io/#javascript/string</a>  - DocHub Reference list for String Methods and Properties</p>
+         
+        <h5>List of String Methods</h5>
+        There are quite a few built-in String methods in Javascript. These are the methods that you would use to do things like form validation - making sure that the form was filled out correctly. 
+        var myString = "Meat Fire Good.";
+        myString.indexOf("eat");   //look for the first occurence of the word "eat" inside myString
+            // This would return the number 1. The method returns the numerical position where the string is found
+        myString.toUpperCase( );  //convert a value to uppercase
+        myString.toLowerCase( );  //convert a value to lowercase
+        myString.lastIndexOf("e");  //start looking at the end of the string for the letter "e". 
+        //Return the numerical position where found
+        //With indexOf and lastIndexOf, if a match is NOT found then the method returns the value -1
+        myString.split(" ");  
+        //split the string apart wherever you find a space. The parts of the string after
+        // being split will become an Array
+        myString.replace(stringToFind, newString ); 
+        //this will find stringToFind inside of myString and replace it with newString
+        myString.substr(startPos, length); //fetch a substring from inside of myString. 
+        //Start at position startPos and get length characters
+        myString.substring( startPos, endPos ); //fetch a substring from inside of myString
+        // Start at startPos and take up to but not including endPos
+         
+        One other useful function which has been added to the recent browsers is the trim( ) method. This method allows you to strip off extra spaces at the start or end of a string. It is useful when dealing with data that users have entered in a form. If there was an extra space before or after the actual value then the trim( ) method will remove it.
+        var username = document.getElementById("username").value.trim( );
+        //places the value from the username field into the variable username, without any leading or trailing whitespace.
+        Here is a video about using the Javascript String methods.
+        http://youtu.be/sQg38QevOaA (Links to an external site.)  
+        Here are the finished files from the Javascript video:
+        String Methods.zip 
+         
+        For additional help see the Lynda.com Javascript Essentials Chapter 3 video on working with Strings
+        http://www.lynda.com/JavaScript-tutorials/Essential-Training-2011/81266-2.html (Links to an external site.)
+        
+        Handling Form Elements
+        Handling Form Elements with Javascript
+        Another big area for Javascript programming is handling Form elements. Forms can contain buttons, checkboxes, radio buttons, text fields and dropdown lists amoung other things. Each of these items are HTML Elements which means that we can attach event listeners to them or access their properties in the same way we would with a paragraph or a heading tag.
+        The most common event listeners for form elements are onfocus and onblur. Depending on the browser onfocus and onblur can  respond to both using the tab key to step between elements and also clicking on an element with the mouse.
+        NB: In some browsers anchor tags will only respond to onfocus and onblur with the tab key. Mouse clicks will not trigger the focus event.
+        onfocus - when the person clicks or tabs to the element so they can start typing in the text field. Works on all form elements.
+        onblur - when the user clicks or tabs on a new element and the current element loses focus. Works on all form elements.
+        onchange - when an element loses focus and it's content has been changed since it gained focus. Works on all form elements.
+        onpropertychange - a key has been pressed and the content of the field has been changed. (Doesn't work in all browsers) works for text fields.
+        onkeydown - after the user has pushed a key on the keyboard down but has yet to release it. 
+        onkeyup - after the user releases a key on the keyboard 
+        onkeypress - the user has pressed a key on the keyboard AND released it while the same element has focus.
+        onsubmit - Works for the form element only. Happens when the user clicks on the submit button in the form.
+         
+        So, using the following HTML we can add event listeners to the various elements.
+        <form action="process.php" method="post" id="mainForm">
+            <input type="text" id="fullname" name="fullname" value="" />
+            <select name="usertype" id="usertype">
+                <option value="1">Gold</option>
+                <option value="2">Silver</option>
+            </select>
+            <input name="btnSubmit" id="btnSubmit" value="Submit" />
+        </form>
+         So, to add a function to validate the form when the user clicks the submit button we would write the following:
+        document.getElementById("mainForm").onsubmit = validate;
+        function validate( ){
+            var fname = document.getElementById("fullname").value;
+            //the variable fname contains the VALUE which the user enter in the field.
+            var utype = document.getElementById("usertype").value;
+            //utype will contain the value from the dropdown list which the user selected
+            if( fname == "" ){
+                return false;  //stop the form submission if they entered nothing for fullname
+            }
+        }
+        One last thing to take note of is the fact that you can actually trigger events to happen without the user.
+        For example, let's say that we want to programmatically submit the form when the user selects something from the dropdown list.
+        document.getElementById("usertype").onchange = function( ){
+            document.getElementById("mainForm").submit( );
+            //notice that the method name is the same as the event name except without the "on"
+        }
+        Here is a short video about these events too.
+        http://www.youtube.com/watch?v=3XKQc_2PdlQ (Links to an external site.)  
+        Here are the finished files from the videos
+        handling-forms.zip 
+        For additional help see the Lynda.com Javascript Essentials Chapter 8 - Building Smarter Forms http://www.lynda.com/JavaScript-tutorials/Essential-Training-2011/81266-2.html (Links to an external site.)
+         
+        Working with Date methods
+        Javascript Date Methods
+        As mentioned previously, the Date object can contain all the information that you would need about a Date or time. If you need to calculate the difference between two dates, if you need to create a countdown clock, if you just want to record the time that something happened, or how long it took to do something then the Date object is what you need.
+        Creating a Date object
+        var today = new Date( );
+        //this will get the current date and time from the user's computer
+        var someday = new Date("2012-5-2 12:00:00");
+        //this will create a new date object containing the time 12 noon on May 2nd, 2012
+        var Xmas = new Date("December 25, 2012 20:30:00")
+        //this would create a date object containing the time 8:30pm on Dec 25, 2012
+         
+        Built-in Methods
+        There are built-in methods for getting and setting the various values in a Date object.
+        Here is the DocHub reference for the date object - http://dochub.io/#javascript/date (Links to an external site.) 
+        var today = new Date( );
+        today.getDate( );    //get the day of the month
+        today.getDay( );     //get the day of the week
+        today.getMonth( );   //values from 0 to 11
+        today.getFullYear( );  //get the four digit year
+        today.getSeconds( );
+        today.getMilliseconds( );    //thousandths of a second
+        today.getTime( );   //number of milliseconds since 1 January 1970 00:00:00 UTC
+        today.getTimezoneOffset(); 
+        //the time-zone offset from UTC, in minutes, for the current locale
+        //AND all the SET versions of those commands
+        today.setDate(23);
+        today.setMonth(3); //This would be April
+        today.setFullYear(2010); 
+        today.setSeconds(45);
+        today.setMinutes(23);
+        //and so on...
+        //and for outputting a formatted date
+        today.getGMTString( );
+        today.getLocaleDateString( );
+        today.toUTCString( );
+        
+        The function getTime( ) is the most useful for calculating time differences.
+        For additional help see the Lynda.com Chapter 3 video on working with Dates.
+        http://www.lynda.com/JavaScript-tutorials/Essential-Training-2011/81266-2.html (Links to an external site.)
+        
+        Working with Math methods
+        Javascript Math Methods.
+        In Javascript there is a built-in object called Math. Don't be intimidated by the name. It is just a handy container for a series of methods that you use when working with numbers.
+        Math.random( );    //generates a random value between 0.000000000000 and 0.99999999999999
+        Math.round( x );  //rounds off the number in the variable x
+        Math.min( a, b );  //Which of the numbers in the list is the smallest. You can add more.
+        Math.max( a, b );  //Which of the numbers in this list is biggest.
+        Math.floor( x );    //Always rounds down. 2.3 becomes 2. 2.9 becomes 2
+        Math.ceil( x );    //Always round up. 2.3 becomes 3. 2.9 becomes 3
+        DocHub link to the Math object. - http://dochub.io/#javascript/math (Links to an external site.) 
+        There are others but these are the main ones.
+         Other Numerical Methods
+        Related to the Math methods are a few methods which belong to the window object.
+        parseInt( str );    // take the string in the variable str and try to extract an integer from the left most side
+        parseFloat( str );    //take the string str and try to extract a float (number with decimals) from the left
+        var myNum = 234;
+        myNum.toString(16); //the toString( ) method can convert Numbers into Strings but at the same time change the base number. If you put a base number inside the parentheses. In this case we are saying that this is a base-10 number. This makes it a great way to convert between decimal and hexidecimal.
+        
+        FTP to Edumedia
+        Connecting to Edumedia
+        When you want to upload files, folders, and assignments to the Edumedia Server you will need to use an FTP client.
+        Filezilla is a great free one - https://filezilla-project.org/download.php?type=client (Links to an external site.) 
+         
+        Watch this video to see how to connect and transfer files using Filezilla
+         
+        https://www.youtube.com/watch?v=T_LHWqe_HAE&feature=youtu.be (Links to an external site.) 
+         
+        The program is available on both Windows and OSX.
+         
+        If you are just looking for the connection information:
+        Domain Host: edumedia.ca OR 66.11.155.8
+        Username: abcd0001 (your own username in this format)
+        Password: 40111222 ( your student number without the first zero)
+        Port: 21
+         
+        Week 3:
+        Three Most Important Methods
+        The three most important methods that you will use when working with webpages and web apps are:
+        1.	querySelector( )
+        2.	querySelectorAll( )
+        3.	addEventListener( )
+        Without those three methods your apps and pages are useless. To be a good developer you MUST be comfortable with all three of these.
+        
+        querySelector
+        Used to fetch a single piece of HTML from a page. Inside the parentheses you add a single string that defines the CSS selector you are using to search for the HTML. If there are multiple matches for your CSS selector then the first one found is returned. 
+        
+        querySelectorAll
+        This method is similar to querySelector. It takes a single string which is a CSS selector. Instead of just returning one HTML element, this method will return an Array. It gives you ALL the matches for the selector.
+        
+        addEventListener
+        This method is how you get to interact with the users. Use any HTML element or the document as the object and then call the method. It takes TWO arguments. The first is the name of the method that you want to attach to the object. The second is either the name of a function or an anonymous function. Here is an example of both.
+        document.addEventListener("DOMContentLoaded", function( ){
+            //this version has the anonymous function
+        }
+        document.addEventListener("DOMContentLoaded", init);
+        function init( ){ 
+            //this version is using a named function 
+        }
+        document.querySelector("#bob").addEventListener("click", function( ){
+            //this version is using an anonymous function
+            //this version is adding a click listener to an HTML element with the id bob.
+        }
+        
+        Adding Event Listeners
+        Adding Event Listeners
+        All webpage behaviour that we create comes down to events. We need to explain to the browser which elements are waiting for which events and what to do when those events occur.
+        Targetting Elements
+        When you plan the user's interactions with a webpage we need to be able to target individual elements. To do this we use the methods:
+        document.querySelector( );
+        document.querySelectorAll( );
+         
+        Both of these methods take a CSS Selector as their only argument.
+        querySelector( ) returns a single HTML element which can be stored inside a variable.
+        querySelectorAll( ) returns an Array. It doesn't matter if one element is found to match the selector, or multiple elements or none at all. It will always return an Array. We then use the [ ] square brackets to target one of the elements in the Array. We can also use the length property of the Array to see how many elements were found that match the CSS selector.
+        var matches = document.querySelectorAll("p.special"); 
+        console.log( matches.length ); 
+        if( matches.length < 0 ){ 
+          matches[0].style.backgroundColor = "red"; 
+        }
+         
+        Another very useful feature of the querySelector and querySelectorAll methods is that you can use them again with an element that you found previously. The methods are NOT just connected to the document object.
+        So, to continue the previous example, lets say that we want to find all the spans that are found inside of the second paragraph on the page that has the class name "special". 
+        var second = matches[1]; 
+        var spans = matches[1].querySelectorAll("span");
+         
+        Attaching the Events
+        The first version of attaching events to objects was the simple "on" + event. Eg:
+        spans[0].onclick = someFunction;
+         
+        This will call a function named someFunction( ) when the user clicks on the first span inside the second paragraph with the class name "special".
+        The limitation of this first version is that you can only attach one listener of each time at a time. We could not use the onclick event listener to call two different functions.
+        spans[0].onclick = someFunction; 
+        spans[0].onclick = secondFunction;
+         
+        If we wrote those two lines then only "secondFunction" would run. The "someFunction" value for the onclick event would overwritten with the "secondFunction" value. 
+        
+        New Event Listeners
+        The latest version of event listeners allow us to attach multiple listeners for the same event to the same object.
+        There is an issue that Internet Explorer and the other browsers have different ways of adding these event listeners. So, we need to write three different values of adding the events. We can bundle all three into a function and call that function when we want to attach an event.
+        You can just copy and paste this function into your code so you have it to use in all your assignments.
+        function addEvent( tag, evType, func ){
+          if( tag.addEventListener ){
+            tag.addEventListener( evType, func, false);
+            //this works for Firefox, Chrome, Safari, and Opera
+          }else if( tag.attachEvent ){
+            var r = tag.attachEvent( "on" + evType, func );
+            //This works for IE only
+            return r;
+          }else{
+            tag["on" + evType] = func;
+            //this works for really old browsers
+          }
+        }
+         
+        The first part with the tag.addEventListener is what most browsers will run. The second part with attachEvent will be run by Internet Explorer. The final part will be run by the old browsers.
+        Once that function is added to our javascript page then we can use it to add events to object like this:
+        window.onload = function( ){ 
+          var match = document.querySelector("section#main"); 
+          addEvent( match, "click", someFunc); 
+        }
+        
+        function someFunc( ){ 
+          console.log("user clicked on the main section"); 
+        }
+         
+        The Bottom Line
+        From this point onward we want to make sure that we are waiting until the HTML finishes loading before we run our functions and attach our listeners. We also want to make sure that we are using the up to date approach for adding our listeners.
+        
+        document.addEventListener("DOMContentLoaded", function(){
+           //this would contain the first code that runs after the HTML loads
+        });
+         
+        CodePen Event Reference
+        http://codepen.io/mad-d/pen/xbxQgO?editors=110 (Links to an external site.)
+        This page shows samples of most of the events that you would use when building web pages and web apps. This is not a comprehensive list of events but there are some code samples. 
+        
+        Adding Sequences of Events
+        Adding Sequences of Events
+        Often we want to attach event listeners to HTML elements but we don't want the event listeners to work until some point in the future, after the user has completed some other task.
+        Let's say that we have a series of three paragraphs that have medium grey text. The first paragraph has a click listener. When clicked the first paragraph will change its text to bold and black. At the same time it will attach a click listener to the second paragraph. The click listener for the second paragraph will change the text for the second paragraph to bold and black plus add a click listener to the third paragraph. When the third paragraph is clicked its text will be turned bold and black. 
+        Here is the HTML and CSS for our example.
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        p{ font-weight: normal; color: #777; }
+         
+        This is the Javascript for our example.
+        window.onload = init;
+        function init( ){  
+          var p = document.querySelector("p");
+          p.onclick = two;
+        }
+        function two( ){  
+          var p = document.querySelector("p");
+          p.style.fontWeight = "bold";
+          p.style.color = "#000";
+          var second = document.querySelectorAll("p")[1];
+          second.onclick = three;
+        }
+        function three( ){ 
+          var second = document.querySelectorAll("p")[1];
+          second.style.fontWeight = "bold";
+          second.style.color = "#000";
+          var third = document.querySelectorAll("p")[2];
+          third.onclick = four;
+        }
+        function four( ){ 
+          var third = document.querySelectorAll("p")[2];
+          third.style.fontWeight = "bold";
+          third.style.color = "#000";
+        } 
+         
+        It is very important to note that the click events on the second and third paragraphs will NOT work unless you click the first paragraph. 
+        These events are happening in sequence. You can click the second paragraph as many times as you want but NOTHING will happen until you click the first paragraph.
+        
+        Updating Content
+        Updating Webpage Content
+        When we update webpages there are three different things that we can change - 
+        1.	HTML Elements
+        2.	HTML Attributes
+        3.	Text
+         
+        HTML Elements
+        For HTML Elements there is only one way to do this - with the createElement( ) and appendChild( ) methods.
+        var p = document.createElement("p");
+        document.querySelector("#main").appendChild( p );
+         
+        This will create a new paragraph and append it inside the element with the id "main" as the new last element.
+         
+        HTML Attributes
+        When adding a new HTML Attribute we can use the createAttribute( ) method to create it then set the value and add it to the element OR, more simply, we can just use the dot notation with the name of the attribute to create AND set it.
+        var p = document.querySelector("p"); 
+        p.title = "The mouseover text"; 
+        p.id="first";
+         
+        This code sample finds the first paragraph on the page and then sets a title attribute as well as an id attribute on that tag. The attributes could have existed already or they could be updated. With this approach it doesn't matter whether or not they already existed.
+         
+        Text Nodes
+        When updating or adding new text to an HTML element we have two options. There is a property of all HTML Elements called innerHTML. We can use that OR we can use the pair of methods - createTextNode( ) and appendChild( ).
+        Here are two examples that show how to do the same thing in two different ways. We are going to add a new paragraph inside the main section with the text "This is a new paragraph."
+        var p = document.createElement("p"); 
+        var main = document.querySelector("#main"); 
+        main.appendChild( p ); 
+        p.innerText = "This is a new paragraph.";
+         
+        var p = document.createElement("p"); 
+        var main = document.querySelector("#main"); 
+        main.appendChild( p ); 
+        var txt = document.createTextNode("This is a new paragraph."); 
+        p.appendChild( txt );
+         
+        Both these code samples do the exact same thing.
+         
+
+         
+        Week 6:
+        Introduction to jQuery 
+        jQuery Intro
+        jQuery is a javascript library that helps people to do complicated javascript tasks with fewer lines of code. It handles the cross-browser compatibility issues and makes animations easy to complete.
+        Here is the official online documentation for jQuery - http://jquery.com/ (Links to an external site.)
+        If you want a good starter book to learn jQuery here is a recommended one (linked to chapters.ca):
+        Visual Quickstart Guide jQuery by Steven Holzner Peachpit Press ISBN-13: 978-0-321-64749-8 (Links to an external site.)
+        OR
+        Jquery: Novice To Ninja by Earle Castledine, Craig Sharkie Sitepoint Press (Links to an external site.)
+        jQuery, in reality is just a Javascript file that you attach to your webpages. Then you can call upon any of the functions and variables that are inside that file. Just make sure that you attach jQuery to your page before your own script.
+        Source Locations for jQuery
+        Here are some locations for the file that you can use to attach it to your webpages.
+        1. You can download the file from jquery.com and save a local copy of it.
+        <script src="scripts/jquery.min.js" ></script>
+        2. You can link to the file from the jQuery.com site
+        <script src="//code.jquery.com/jquery-2.0.3.min.js" ></script>
+        3. You can link to the Google Ajax library location:
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script> 
+         
+        Of these three, the best choice is probably the google CDN location. It will server the page as fast or faster than your own server plus you are not responsible for the bandwidth. The Google network will be able to respond to any spikes in traffic that you get.
+         Lynda.com Video Tutorials
+        Great introduction to the idea of Javascript Libraries such as jQuery - Watch Javascript Essentials Chapter 11 JavaScript Libraries
+        http://www.lynda.com/JavaScript-tutorials/Essential-Training-2011/81266-2.html (Links to an external site.)
+        Codecademy Interactive Tutorials on jQuery
+        http://www.codecademy.com/tracks/jquery (Links to an external site.)
+         
+        Free JQuery PDF / Kindle E-book
+        Here is the PDF version of this free jQuery e-book - jQuery_Succinctly.pdf  . 
+        If you want the kindle version you can get it from -  http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513 (Links to an external site.)
+        Locating Elements with jQuery 
+        Basics of Using jQuery
+        Once you have loaded the jQuery library then you can use any of the jQuery methods to manipulate the contents of your webpages. The key to everything we do in jQuery is that all the methods begin with a "$". Here is a simple example which will set a 2px red border on all the paragraphs on the page which are found inside something with the id "wrapper".
+        $("#wrapper p").css("border", "2px solid red");
+        Similar to the relatively new built-in document.querySelectorAll( ) method, the $( ) method will find all the objects based on the CSS query.
+        The cool difference between querySelectorAll method and the $ method is that we can CHAIN other commands onto the end of our command. These chained commands will automatically be applied to everyone of the elements found by the $ method.
+        $("#wrapper p").addClass("special").css("border", "2px solid red");
+        This example will add the CSS class name "special" to all the paragraphs and then set the CSS style property for border on all the paragraphs. This achieves in a single line of code what would take us about six lines in traditional javascript.
+        So, most of what we will do with jQuery starts with locating elements. To do that we simply use the $( ) method. Place the CSS query to locate the object or objects inside the parentheses  and then chain the other commands after it.
+        If you want, you can save the result of the $( ) method in a variable to use later.
+        You can also use variables as part of the CSS selector inside the parentheses. Example:
+        var bigRed = ".bigRed";
+        $("p span" + bigRed).css("background-color", "goldenrod").attr("title", "Title set by jQuery");
+          In the above example you can see inside the first set of parentheses "p span" and bigRed. Those two parts will be stuck together to create the selector "p span.bigRed" - all spans with the class name bigRed which are inside paragraphs. Then each span is going to get it's background color set to goldenrod and finally, each span will have its title set as "Title set by jQuery".
+         Here is a link to the jQuery documentation page talking about the methods for getting or setting any attributes - http://api.jquery.com/category/attributes/ (Links to an external site.)
+        
+        Getting Attribute Values with jQuery
+        So far what we have been doing is setting values.
+        $("p").css("color", "#000");
+        To set a value you provide two arguments. In this example we wrote "color" and "#000". The first value is the property we want to set. The second value is the value we want to set for that property.
+        We have the .css( ) method and the .attr( ) method as the two main ones. For either of these methods adding two arguments will set that property.
+        If we only enter one argument then we are going to get the currently set value.
+        var title = $("p#bob").attr("width");
+        This code would find a paragraph with the id "bob" and then get its width. The value for the width will be saved in the variable title.
+         
+         Video Tutorial for jQuery
+        The version of jQuery used in this tutorial is from early 2011 (version 1.5). We will be using version 1.8 for our work. However, the functions and the way it works is no different between this video and what we are going to do.
+        https://www.youtube.com/watch?v=_iRIPJHrdXg (Links to an external site.) 
+        There is a series of jQuery videos created by thenewboston.
+        https://www.youtube.com/watch?v=PF7q6gweods (Links to an external site.)  This is video 2 in the series. The first video does very little to explain anything. This video shows a few basics.
+        Video 7 in the series by theNewBoston shows how to use the method:
+        $(document).ready( ); 
+        https://www.youtube.com/watch?v=SrsbCwq5MUA (Links to an external site.) 
+        
+        Adding HTML with jQuery 
+        Adding and Editing HTML Content with jQuery
+        When we are adding or manipulating HTML with standard Javascript it frequently takes several lines of code for each element or piece of content that we want to add. With jQuery we can accomplish this with much less code.
+        $("p#bob").append('<span>Some content</span> and <a href="http://www.google.ca/">Google Link</a>");
+        This will create that chunk of HTML and add it AFTER the paragraph with the id "bob".
+         
+        Link for jQuery documentation page for manipulation - http://api.jquery.com/category/manipulation/ (Links to an external site.) 
+         
+        Lynda.com Video Series on jQuery
+        http://wwwlyndacom.rap.ocls.ca/course20/jQuery-tutorials/essential-training/48370-2.html (Links to an external site.) - Off campus link 
+        http://www.lynda.com/jQuery-tutorials/essential-training/48370-2.html (Links to an external site.) - On campus link
+        The Lynda.com videos are a great resource to learn all the jQuery fundamentals.
+         
+        Some other methods that we have for adding HTML are:
+        $("p").append('<p>HTML String</p>');  //Add inside the element(s) AFTER the existing content
+        $('<p>HTML String</p>').appendTo( "p" );  //Add inside the element(s) AFTER the existing content
+        $("p").prepend('<p>HTML String</p>');  //Add inside the element(s) BEFORE the existing content
+        $('<p>HTML String</p>').prependTo( "p" );  //Add inside the element(s) BEFORE the existing content
+        $("p").empty( );  //Remove everything from inside the element(s)
+        $("p#bob").text("new text inside the paragraph");
+        $("p#bob").html("<span>New HTML inside the paragraph</span>");
+        $("p").remove( );  //remove all the paragraphs from the page.
+        $("p").insertAfter("<p>new content</p>"); //add the new HTML AFTER the element(s)
+        $("p").insertBefore("<p>new content</p>"); //add the new HTML BEFORE the elements(s)
+        $("p#bob").width();
+        $("p#bob").height();
+        $("input#username").val(); //get the value from the form field
+        $("input#username").val("new value"); //set the value in the form field
+        var copy = $("p#bob").clone(); //create a copy of the element and its content 
+         
+        jQuery each Method
+        Sometimes when we add or are about to add content to a series of elements we might want to do something slightly different to each one. In standard Javascript we use a for loop to add each piece of content. This allows us to do something different to each element. So, if that is what you need to do instead of automatically doing the same thing to each element then we use the each( ) method.
+        http://api.jquery.com/each/ (Links to an external site.)
+        Example - adding a series of spans into a list of <td> cells and putting a new number inside each one.
+        $("table#calendar tbody td").each( function(index){
+            //index is the variable that will represent the index number for each td - like the loop counter
+            //$(this) - represents each td.
+            $(this).prepend("<span>" + index + "</span>");
+        });
+        This will turn each <td></td> into <td><span>1</span></td>. The number 1 will increment with each one added.
+        
+        Handling Events with jQuery
+        Handling Events with jQuery
+        In standard Javascript we make things happen on the web page by attaching event listeners to objects. If we want to attach a whole bunch of event listeners to a whole bunch of objects then we use a for loop and repeat the code for each object. 
+        Once again, jQuery does it faster and easier. 
+        Here is an example where we add an onclick listener to all the spans inside the section with the id "main".
+        $("section#main span").click( doSomething );
+        Done. Regardless of the number of spans on the page, inside the main section, this code will add an onclick listener to each one and they will all call the function doSomething( ). Inside that function we can use the jQuery $(this) object to refer to the span which was clicked. 
+        function doSomething( ){
+            $(this).attr("title", "I was clicked");
+        }
+        Now, as we click on the spans they will each have a title attribute added and that attribute will have the value "I was clicked".
+        Video by theNewBoston for working with the attr( ) method:
+        https://www.youtube.com/watch?v=nh0ZQLO0FMo (Links to an external site.) 
+         
+        Adding Multiple Listeners
+        If we wanted to add multiple event listeners to the same object we will just chain them together like we did when chaining the methods for css and manipulating html.
+        $("section#main span").mouseover( funcOne ).mouseout( funcTwo ).click( funcThree );
+        The above code would attach three event listeners to each of the spans. One for the mouseover, one for the mouseout and one for the click event.
+        Now, it is worth mentioning at this point that we can attach anonymous functions to any or all of the event listeners instead of named functions. Here is the above example written with anonymous functions for the mouseover and mouseout events.
+        $("section#main span").mouseover( function( ){
+            //this code runs when the user mouses over any of the spans
+        }).mouseout( function( ){
+            //this code runs when the users mouses out of any of the spans
+        }).click( funcThree );
+         
+        function funcThree( ){
+            //this function is called when the span(s) are clicked.
+        }
+        Here is the documentation page for all the event methods http://api.jquery.com/category/events/ (Links to an external site.)
+         
+        Using Bind and Unbind
+        There is an alternative to using the click( ), mouseover( ), etc methods. That is using the bind( ) method. This method lets us attach event listeners in a way where we can remove them later if we want.
+        $("section#main span").bind( "click", doThatThing ).bind("click", doThisThing);
+        This will add two click listeners to all the spans just like the click( ) method would.
+        Later, if we want we can get rid of a listener like this:
+        $("section#main span").unbind( "click", doThatThing );
+        This code will get rid of ONLY the listener which is calling the function doThatThing( ).
+         Video by theNewBoston on using bind( )
+        https://www.youtube.com/watch?v=FvD4i1W0nxQ (Links to an external site.) 
+         
+        Using Live and One
+        Two other related methods are live( ) and one( ). 
+        $("section#main span").live("click", doThatThing);
+        This will add the click listener to all the spans just like bind does. 
+        The difference is that any spans which are added to the main section at any time in the future will automatically get the same click listener.
+        The one( ) method adds an event listener just like bind( ) except that it will automatically remove itself after the function it is bound to is called one time.
+        $("section#main span").one("click", doThisThing);
+        This will add the click listener to all the spans. However, the function doThisThing will only run one time after EACH span is clicked.
+         Video by theNewBoston on using live( )
+        https://www.youtube.com/watch?v=WDftw56YF6o (Links to an external site.) 
+        Showing and Hiding Elements
+        Showing and Hiding Elements with jQuery
+        A common thing to do in interfaces is showing and hiding various HTML elements. It could be an image overlay, a flyout menu, a login box, or an advertisement. Regardless of the reason, these are all HTML block elements that we want to show or hide.
+        jQuery comes with a great list of pre-built animation type effects - http://api.jquery.com/category/effects/ (Links to an external site.)
+        Usually we would be using events to trigger the animations so that is what these examples will do too.
+        $("#menutab").click( function( ){
+            $("#flyout").show( );
+        });
+        This code would make the element with the id "flyout" appear when the user clicks the element with the id "menutab".
+        If you instead wanted to toggle back and forth between seeing and not seeing "flyout" when the user clicks on "menutab" -
+        $("#menutab").click( function( ){
+            $("#flyout").toggle( );
+        });
+        So we change the method name from show( ) or hide( ) to toggle( ) and it does both. It toggles back and forth between showing and hiding "flyout".
+        Closely related to the show( ) and hide( ) methods are fadeIn( ) and fadeOut( ) as well as their related method fadeToggle( ).
+         
+        One more useful set of animation methods that jQuery gives us right out of the box is the slideUp( ), slideDown( ), slideToggle( ). This set also makes elements appear and disappear but they expand and contract from their top edge to make it look like they are appearing and disappearing below content that is above them on the page.
+        $("#menutab").click( function( ){
+            $("#flyout").slideToggle( );
+        });
+         
+        Video by theNewBoston on showing and hiding elements with jQuery
+        https://www.youtube.com/watch?v=UHEcKmoMBZo (Links to an external site.) 
+        Highlighting Elements 
+        Highlighting Elements with jQuery
+        Good user experience has to do with making things obvious and easy to understand for your users. 
+        One thing that helps with this is highlighting new elements and elements that have changed. When we use AJAX or when we are processing forms there is frequently new information to be added. If we want the user to be aware of the change we should highlight the containing element.
+        A great way to highlight something is to create a CSS class which can be used to highlight an area. Then we use our script to add or remove that class from the desired element.
+        $("#myelement").addClass("highlight");
+        And then to get rid of the highlighting
+        $("#myelement").removeClass("highlight");
+        Or, if you like, you can add code to toggle the class on and off whenever an event listener triggers your code.
+        $("#myelement").toggleClass("highlight");
+         
+        If you want to find out if an element has a css class we can use the hasClass( ) method. Example:
+        $("p").each( function( index ){
+            if( $(this).hasClass("hello") ){
+                $(this).removeClass("hello").addClass("highlight");
+            }
+        });
+         
+        AJAX methods in jQuery
+        AJAX Methods in jQuery
+        Here is the official jQuery documentation for all of its AJAX methods - http://api.jquery.com/category/ajax/ (Links to an external site.)
+        There are a variety of jQuery methods for making AJAX calls. Most of them have default settings regarding what kind of data they are trying to retrieve and what you are going to do with the data once you have retrieved it.
+        The best part of these methods is how little code you have to write to make the AJAX functionality work AND the fact that the methods have built-in methods for handling success and failure of the AJAX call.
+        We will start with the generic AJAX method - $.ajax( ) . This method accepts a list of parameters as a Javascript Object.
+        In this example we are going to fetch a JSON file from the server and then call a function called good if the call worked or a function called bad if the call failed.
+        var xhr = $.ajax({
+             url : "myinfo.js",
+             dataType :"json",
+             type: "POST"}).done( function( data ){  
+                 // this function will run if the AJAX call is successful
+                 console.log( xhr.responseText );  //this is the text inside the returned file
+                 console.log( data ); //this is the returned data, basically same as xhr.responseText
+                 var dataV2 = jQuery.parseJSON( xhr.responseText ); //exactly the same as data
+             }).fail( function( ){
+                 //this function will run if the AJAX call fails for any reason.
+                 console.log( xhr.status ); 
+             });
+        The value for dataType can be xml, html, json, jsonp, script, or text.
+        The done( ) method will run if the request for myinfo.js worked, a file was returned and it was parsed as JSON successfully.
+        The fail( ) method will run if there was any problem with the loading or parsing of the JSON file.
+        The jQuery XMLHttpRequest object that gets created by the $.ajax( ) method is being held in the variable xhr. From that variable you can access all the information that you would need about the file being returned from the server. These are the properties for the object:
+        xhr.status
+        xhr.readyState
+        xhr.statusText
+        xhr.responseText
+        xhr.responseXML
+         
+        These are some additional available jQuery methods that help when working with AJAX:
+        xhr.setRequestHeader(name, value)
+        xhr.getAllResponseHeaders( )
+        xhr.abort( )
+        xhr.getResponseHeader( name )
+         
+        setRequestHeader lets us pass additional header parameters to the server. We can make up our own headers and write some server-side code that looks for them.
+        getResponseHeader will allow us to look at one specific header to see if it was returned from the server after our AJAX request. Eg: The server side code could pass a parameter with a key value that we use to alter data in the result set. Alternatively, the server-side code could pass a parameter that tells us whether JSON or JSONP was returned.
+        getAllResponseHeaders gives us a list of all the header parameters and we can search through the list for the one we want.
+        abort tells the browser to cancel the request for the file. Now, we cannot stop the server from sending a file but we can tell the browser to stop listening for it.
+         
+        Here is a video about using jQuery to fetch an XML file with AJAX.
+        http://youtu.be/nHSEU4_JO1M (Links to an external site.)  
+        Here are the files used in the video
+        jQuery-ajax-code.zip 
+        
+        Alternate AJAX Methods in jQuery
+        Alternate AJAX Methods in jQuery
+        jQuery has the main AJAX method $.ajax( ). However, this is definitely not the only way to use AJAX through jQuery. With the $.ajax( ) method we provide an object that contains a list of properties and values. We specify whether we want to use GET or POST, if we are trying to fetch HTML, text, XML or JSON, the URL for the data file we want to load, the name of the functions to call if the AJAX call fails or succeeds.
+        GET and POST
+        We can use the other methods to call upon a preset group of parameters.
+        xhr = $.get( { "myfile.xml", function(data, textStatus, jqXHR ){
+            //this is the function that runs when the call to myfile.xml succeeds
+        } ).error( badStuff );
+        function badStuff( jqXHR, textStatus, errorThrown ){
+            //this runs when the AJAX call to myfile.xml fails.
+        }
+        $.get( ) is the first of these preset methods. It makes a GET call to the server for myfile.xml. There is also a $.post( ) method that does the same thing.
+        We can use either of those methods to fetch Text, HTML, JSON, or XML. jQuery will try to figure out what the file is based on the MIME TYPE of the file returned by the server.
+        Here is a short video about the alternate methods $.get and $.post
+        http://youtu.be/cBWqR3MzUfc (Links to an external site.)  
+        Here are the code files from the video
+        jQuery-alt-ajax-1.zip 
+         
+        getJSON and getScript
+        If you know what the file type is then you can use a specific method for JSON or for loading an additional Javascript file.
+        $.getJSON( "myfile.js", function( data, textStatus, jqXHR ){  
+            //this function runs when the call for the JSON file works.
+        })
+        //OR
+        $.getScript("ajax/test.js")
+        .done(function(script, textStatus) {
+            console.log( textStatus );
+          //this runs if the Javascript file is loaded.
+        }).fail(function(jqXHR, textStatus, errorThrown ) {
+            $( "div.log" ).text( "Triggered ajaxError handler." );
+            //this runs if the Javascript file fails to load
+        }); 
+        
+        Load Method
+        The last AJAX method is the load( ) method. This method is designed for you to be able to load a file which contains a chunk of HTML and then place that HTML inside some part of the web page as new content.
+        $("#output").load( "newstuff.html" );
+        This will take the contents of the file newstuff.html and append it to the web page inside of the element with the id "output".
+        Additionally, if you want to load part of the newstuff.html page into the current page then you can add a CSS selector to the page name to extract ONLY that part.
+        $("output").load( "newstuff.html #coolpart" );
+        This would find some element with the id "coolpart" within the page newstuff.html. Then that content will be loaded into the element with the id "output".
+        Here is a short video about the $.getJSON method.
+         http://youtu.be/aQA7QtEPNzo (Links to an external site.)  
+        Here are the code files from the video:
+        jQuery-alt-ajax-2.zip 
+        
+        AJAX Events
+        AJAX Events in jQuery
+        When dealing with Javascript objects we know that they can have properties, methods and events. When it comes to concrete visible objects like buttons, images, forms, and paragraphs it is easy to understand the events. Many of them have to do with using the mouse - CLICK, MOUSEDOWN, MOUSEUP, MOUSEOVER and so on. Non-mouse events like LOAD or SUBMIT are also fairly easy to understand.
+        
+        The Main Events
+        When it comes to AJAX the events are all behind the scenes things. There were in earlier versions of jQuery three main event listeners - success( ), error( ) and complete( ). As of jQuery version 1.8 those three have been deprecated and we are supposed to use done( ), fail( ) and always( )
+        $.ajax({ url: "mydata.xml"
+        }).done( function( ){
+            //this runs when the AJAX call successfully finishes
+        }).fail( function( ){
+            //this runs when the AJAX call failed for some reason
+        }).always( function( ){
+            //this runs after the AJAX work is done...with success or failure
+        }).
+        So, we can chain the done, fail and always listeners on to the end of the ajax method call.
+        Supplemental Events
+        Occasionally, we will want to trigger code to run at other times than just the done, fail, or always scenarios. To do this we call on other AJAX events
+        $.ajax({
+            url: "mydata.js",
+            dataType: 'json',
+            beforeSend: function( jqxhr ){
+                //this code runs just before the AJAX call is made.
+            },
+            type: 'POST'});
+        beforeSend is a local event belonging to the jQuery AJAX object which was just created.
+        Other AJAX events are considered GLOBAL. This means that they can be setup so that every time ANY AJAX call is made the attached functions will be called.
+        $("#loadbar").ajaxStart( funcOne ); //called if an AJAX request is started and no other request is currently running
+        $("#loadbar").ajaxSend( funcTwo ); //runs function immediately before ANY AJAX call is made.
+        $("#loadbar").ajaxSuccess( funcThree ); //runs when ANY AJAX call is successful
+        $("#loadbar").ajaxError( funcFour ); //runs when ANY AJAX request fails
+        $("#loadbar").ajaxComplete( funcFive ); //runs when ANY AJAX request has finished.
+        You will notice that these are all connected to an HTML element. They can be attached to any object we want as long as the object is within jQuery's control. Then we can do something with that object when the AJAX event is triggered. Typically we would use a messaging area on the page so that we could display information about success or failure of the AJAX call.
+        
+        JSON versus JSONP
+        JSON versus JSONP
+        There is no question that the advent of the XMLHttpRequest object drastically changed the way that we work with the web and brought about the Web2.0 revolution.
+        We have many file formats to choose from when we are working with AJAX calls - plain text, html, XML, and JSON. All are handled slightly differently when we get the data back to the browser but the methodology is the same. We ask for a file that sits on the same server as the originating HTML file.
+        This security restriction is something that had very few work arounds. we usually had to resort to server side technologies to fetch data from somewhere else but this was not a very efficient process. Recently they have been working on a solution to this problem - CORS. With CORS we will soon be able to fetch XML data from anywhere we want.
+         
+        CORS
+        CORS - stands for Cross Origin Resource Sharing. It is the new approach which is part of the HTML5 update to the XMLHttpRequest object. 
+        With CORS they are attempting to let people load data from different domains in a secure manner. To use it you need to have control over the Javascript on the current web page as well as access to server settings on the other web server where you want to get the data.
+        Here are a few links that will give you more details on this new capability:
+        https://hacks.mozilla.org/2009/07/cross-site-xmlhttprequest-with-cors/ (Links to an external site.)
+        http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/ (Links to an external site.)
+        http://www.html5rocks.com/en/tutorials/cors/ (Links to an external site.)
+        https://developer.mozilla.org/en-US/docs/HTTP_access_control (Links to an external site.)
+         
+        Other Ways to Load JSON
+         With the other file formats - text, HTML, and XML - we are restricted to the same domain.
+        However, with Javascript we can actually ask for files from any where on the web.
+        <script src="http//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        Look familiar?
+        But the fun doesn't stop there. All browsers have the ability to create new HTML elements at any time. And isn't the script tag just another HTML tag? So, in the same way that we would create a paragraph tag and add it to the page, we can create a new script tag and add that to the page.
+        var s = document.createElement("script");
+        document.getElementsByTagName("head")[0].appendChild(s);
+        s.src = http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js";
+        Done. That is all it takes to add a new script to any webpage.
+        And script files can be JSON files...
+        http://search.twitter.com/search.json?q=prometheus (Links to an external site.)
+        http://iviewsource.com/?json=recentstories (Links to an external site.)
+        Click on these two links and you will see that they are just JSON files coming from somewhere else.
+         
+         Back to JSON versus JSONP
+        So, since we can load a JSON file from anywhere by simply adding a <script> tag that points its src to the proper URL we can fetch JSON data from anywhere at any time.
+        Once people started doing that on a regular basis they decided that they wanted to actually call on a function to handle that data as soon as the data came back to the browser. Now, this isn't an AJAX call so it doesn't have an onreadystatechange event that we can link to.
+        However, we can call a function in one Javascript file from another Javascript file. We do that all the time with jQuery methods.
+        So, what if we wrapped all that JSON data in a function call? The data would become the argument being passed to our function.
+        //On our own script page
+        function handleData( thedata ){
+            //the variable "thedata" would be the actual JSON data for us to play with.
+            alert( thedata.names[0] );
+            // this would alert the name Carl.
+        }
+        //The external script being loaded through a script tag
+        handleData( {"info":"stuff", "num":123, "names":["Carl", "Rick", "Laurie"]} );
+        How cool is that?
+        Now, to make this even cooler. If we pass the name of the function through the query string when we ask for the dynamically generated JSON file then the folks on the other end can PAD the JSON data with the function call. Hence JSON with Padding or JSONP.
+        jQuery AJAX and C.O.R.S.
+        C.O.R.S. with jQuery
+        Now that IE 10 supports CORS we have good cross-browser support for requesting data from different domains. http://caniuse.com/#feat=xhr2 (Links to an external site.) 
+        http://www.html5rocks.com/en/tutorials/cors/ (Links to an external site.) - A great starter tutorial to learn about CORS and why it is important.
+         
+        jQuery
+        jQuery supports using the CORS functionality with AJAX requests as of version 1.5. Now that IE 10 supports CORS we are going to take advantage of the CORS capability in the browsers.
+        NB: If you are building a website that needs to support older browsers then you will need to find another solution other than CORS. 
+         
+        In order to use CORS properly we need to add a couple parameters to our AJAX requests.
+        Old version
+        $.ajax({ 
+          url: 'somedata.js', 
+          dataType: 'json' 
+        }).done( gotData ).fail( badThings );
+         
+        New updated version
+        $.ajax({ 
+          url: 'http://www.example.com/info/somedata.js', 
+          dataType: 'jsonp', 
+          crossDomain: true, 
+          xhrFields: {
+            withCredentials: true
+          }}).done( gotData ).fail( badThings );
+         
+        With the crossDomain and xhrFields parameters added to the AJAX call you can now request data from different domains.
+         
+        In order to test this on localhost we also need to be sure that the server is set up to handle the CORS request.
+        We need to add this file - ht.access  inside the wamp/www folder on windows or mamp/htdocs folder on OSx.
+        For both WAMP and MAMP we need to add a line at the bottom of the httpd.conf file, which can be reached through the wamp > apache menu in the taskbar.
+        OR if you want the file location to open httpd.conf
+        MAMP - /Applications/MAMP/conf/apache/httpd.conf
+        WAMP - C:\wamp\bin\apache\Apache2.4.4\conf\httpd.conf
+         
+        The new line at the bottom of the httpd.conf file should be
+        AccessFileName ht.access
+         
+        Search through the file first to see if this line already exists. On MAMP it likely will. 
+        If you find the line you have two options:
+        1. Change the AccessFileName value to match your file name.
+        2. Use the Terminal to rename ht.access to .htaccess
+         
+        On the edumedia server the file name will be .htaccess but the file is already on the server so you do not need to upload it.
+         
+        Week 9:
+        Intro to jQuery UI
+        Introduction to jQuery UI
+        jQuery UI is a series of user interface components which are commonly used elements on web sites and in web applications. These ones are built with and designed to work with the jQuery Javascript library.
+        http://jqueryui.com/ (Links to an external site.) 
+        Along with the UI components there are other effects and plugins which together allow developers to create interfaces very quickly and easily.
+        The Lynda.com Essential jQuery training videos:
+        http://wwwlyndacom.rap.ocls.ca/course20/jQuery-tutorials/essential-training/48370-2.html (Links to an external site.) - Off campus link
+        http://www.lynda.com/jQuery-tutorials/essential-training/48370-2.html (Links to an external site.) - On campus link
+        This video series contains two chapters on jQuery UI. Chapters 6 and 7.
+         
+        Here is the link for the basic jQuery Effects documentation - http://api.jquery.com/category/effects/ (Links to an external site.)
+        There are more effects that are part of jQuery UI. These can be found through the jqueryui.com link above.
+         
+        How to Use jQuery UI
+        In order to use jQueryUI you need to link to the original version of jQuery as well as the jQueryUI css file and the jQueryUI javascript file.
+        Here is the Google page with links to the library files - https://developers.google.com/speed/libraries/devguide?hl=en (Links to an external site.)
+        Currently the stable release version of jQueryUI is 1.11.2. 
+        We will use the most up to date version of jQuery - either 1.11.1 or 2.1.1.
+         
+        Here is a list of the things that jQuery UI adds to the capabilities of jQuery.
+        Interactions
+        •	Draggable
+        •	Droppable
+        •	Resizable
+        •	Selectable
+        •	Sortable
+        Widgets
+        •	Accordion
+        •	Autocomplete
+        •	Button
+        •	Datepicker
+        •	Dialog
+        •	Menu
+        •	Progressbar
+        •	Slider
+        •	Spinner
+        •	Tabs
+        •	Tooltip
+        Effects (these are enhanced capabilities of existing methods)
+        •	Add Class
+        •	Color Animation
+        •	Effect
+        •	Hide
+        •	Remove Class
+        •	Show
+        •	Switch Class
+        •	Toggle
+        •	Toggle Class
+        
+        Intro to jQuery Mobile
+        jQuery Mobile
+        jQuery Mobile is a couple of additional files that are added to web pages, in conjunction with jQuery, to make web pages look and act like mobile applications. At a minimum there is one additional CSS file and one additional Javascript file.
+         http://jquerymobile.com/ (Links to an external site.) 
+        jQuery Mobile takes the approach of treating a single web page as a web site. The web site is called a mobile web app.
+        Instead of creating a series of HTML files and linking between each of these pages, we create a single HTML file and inside that a series of <div>s that are given the data-role attribute with the value "page".
+        <div data-role="page">
+        </div>
+        Inside the "page" you will have three main elements:
+        <div data-role="header"></div>
+        <div data-role="content"></div>
+        <div data-role="footer"></div>
+        Inside the "content" section you will place all the main details for the page. This is the user interface that your users will read and interact with. The main navigational controls will likely be inside the header and the footer.
+        Here are some sample files to start playing with interface components.
+        jqm-intro.tar 
+        Those samples also include a sample theme. (see J Query Mobile Themes) 
+        As you can see from the example file, the jQuery elements are controlled by the addition of a series of data- attributes.
+        http://api.jquerymobile.com/data-attribute/ (Links to an external site.)
+        This reference covers most of these data- Microdata API attributes used by jQuery Mobile.
+        We can turn anchor links into buttons by adding the data-role="button".
+        We can turn series of buttons into navigation bars by wrapping the links in a div and giving the data-role="navbar" to the <div>.
+        There are many controls that we can add to a page with data-role. These include listview, layout grid, navbar, slider, split listview, dialogs and popups.
+        Dialogs and popups are very similar. the main difference between them is that a dialog loads a "page" div or an external URL but a popup loads a small part of a page from inside the <div data-role="content"></div>.  
+         
+        Here are the demos for jQuery Mobile version 1.4 - http://demos.jquerymobile.com/1.4.4/ (Links to an external site.) 
+         
+        There is a Lynda.com Video Tutorial series on using jQuery Mobile
+        http://wwwlyndacom.rap.ocls.ca/course20/jQuery-tutorials/jQuery-Mobile-Web-Applications/104967-2.html (Links to an external site.) - off campus link
+        http://www.lynda.com/jQuery-tutorials/jQuery-Mobile-Web-Applications/104967-2.html (Links to an external site.) - on campus link
+        
+        jQuery Mobile Themes
+        Creating jQuery Mobile Themes
+        You can always edit a CSS file that comes with whatever library / CMS / toolkit that you choose to use. jQueryMobile is no different. You can create your own themes / CSS files to alter the default behaviour and appearance of your JQM site.
+        To aid in this process however, JQM comes with a Theme Roller. This is a web page that lets you use a visual interface to create new themes / CSS files for your JQM app.
+        http://jquerymobile.com/themeroller/ (Links to an external site.)
+        Here is a sample zip file that you would get after downloading a theme:
+        jquery-mobile-theme-052704-0.zip 
+        Starter Themes
+        When you use jQuery Mobile with its default settings, there are five themes provided: a, b, c, d, and e.
+        Start using a theme by adding the data-theme attribute to your "page" elements.
+        <div data-role="page" data-theme="b">
+        </div>
+        This way the theming cascades to most content on the page.
+        Themes which are applied to the header and footer will automatically be applied to ALL elements inside them.
+        Then you can apply your desired theme to other elements on the page. Eg:
+        <ul data-role="listview" data-theme="c">
+        </ul>
+        Custom Themes
+        If you want to edit the styles being applied to the jQuery elements you can either edit the jQuery Mobile Theme CSS file or you can use the theme roller (link above) to create a new jQuery Mobile Theme CSS file.
+        The order of the CSS links in your HTML should be:
+        <link rel="stylesheet" href="jqm-theme.css" />
+        <link rel="stylesheet" href="jqm-structure.css" />
+        These are not the actual file names but how they should be ordered. The theming file comes first, followed by the structure file.
+        If you use the theme roller page, when you have completed creating your theme swatches (you can create up to 26) then you click the download button. This will allow you to save a zip file which contains the new CSS, the images to use with your theme swatches and a single demo html file called index.html.
+        Copy the minified CSS file and the images folder to your jQuery Mobile folder.
+        In your HTML you then have to replace with default css theme link with a link to your NEW jQuery mobile theme file.
+        The swatches that you created and downloaded will be accessible on your web page through the same letters a through e and so on (depending on how many swatches you created).
+        
+        Scripting jQuery Mobile Functionality
+        Scripting Functionality in jQuery Mobile
+        Once you have created your jQuery Mobile page elements the first step is to create the various links between the pages. You could be using listviews, split listviews, navbars, back and forward buttons or just solitary buttons. The href attributes inside those anchor/buttons can point to the id of the page you wish to navigate to.
+        Remember that any link placed inside the header will automatically be styled as a button which matches the theme applied to the header. The first button will automatically be floated to the left and the second link will be floated to the right. The header wants to have two links - think back and forward buttons. More links that that should be wrapped in a navbar element. Navbar elements will stretch across the whole width of the header.
+        Footers do not float left and right. They just stack to the left.
+        However, simple links between parts of your HTML page is only the first level of functionality. We can add transitions between pages to add a consistent user-experience. Eg:
+        <a href="#page" data-role="button" data-transition="flow">view list of people</a>
+        This makes things look better and feel more professional but is definitely limited in its functionality. Once someone sees a series of static pages once then they likely do not need to see the pages again. To really have some value, there should be some dynamically added data on the page. Using AJAX will allow you to fetch new information from the server. Using HTML forms or other HTML5 capabilities, like GeoLocation, will allow you to customize the user experience even further.
+        Just like we would in standard HTML and Javascript we can add ids to anchor tags and then use those ids to trigger Javascript functions.
+        The first step in adding the Javascript controlled functionality is to adding the initial event handler. On a standard web page we would use:
+        $(document).ready( function( ){  });
+        //or
+        $(document).on('ready', function( ){ });
+         
+         
+        With jQuery Mobile we are building touch optimized web apps. This usually means a single page web application (SPA).
+        We are looking for two different events instead of the jQuery ready( ) event. The best event for us to use at the start is the mobileinit event. So our first piece of Javascript will be:
+        $(document).on('mobileinit', function( ){   
+            //our code goes here to override any settings
+            //this event runs as jQuery starts to prepare the page as a jQuery Mobile page
+            //here we would set up default messages to the user and time delays for events like taphold.
+            //or cross-domain requests for pages or data
+         $.mobile.allowCrossDomainPages = true;
+         $.support.cors = true;
+        }); 
+         
+        The next event for binding is the pageinit event. This is the event which tells us that jQuery has finished "enhancing" the markup and presenting the page to the user.
+        $("#home").on('pageinit', function( ){
+            //inside here is where we place code that runs when a page has been enhanced 
+            //here we can start to work with the jQuery elements on the page.
+        });
+         
+        After pageinit is triggered we can then add event interaction to the elements on the page. Please note that the pageinit event is actually being bound to a specific page id, not the document object.
+        The best part about the pageinit event is that it doesn't just run once like the $(document).ready( ) event. The pageinit event after every user navigation to a new page once jQuery Mobile has finished rendering the page with all the data- attributes.
+        Since we will want access to both the mobileinit and the pageinit events we will want to place our own custom Javascript file in between the jQuery Javascript file and the jQuery Mobile Javascript file. Like this:
+        <script src="jquery.js"></script> 
+        <script src="my-script.js"></script> 
+        <script src="jquery-mobile.js"></script>
+         
+         
+        Useful jQuery Mobile Reference Pages
+        Introduction to concepts used in jQM - http://demos.jquerymobile.com/1.4.4/intro/ (Links to an external site.)  
+        Demo pages - http://demos.jquerymobile.com/1.4.4/ (Links to an external site.) 
+        RWD concepts in jQM - http://demos.jquerymobile.com/1.4.4/rwd/ (Links to an external site.) 
+        How to build app pages in jQM - http://demos.jquerymobile.com/1.4.4/pages/ (Links to an external site.) 
+        Using data- attributes - http://api.jquerymobile.com/data-attribute/ (Links to an external site.) 
+        List of Icons built in to jQM - http://demos.jquerymobile.com/1.4.4/icons/ (Links to an external site.) 
+        jQM Events - http://api.jquerymobile.com/category/events/ (Links to an external site.) 
+        Layout Grid in jQM - http://api.jquerymobile.com/responsive-grid/ (Links to an external site.) 
+        Mobile Themeroller - http://themeroller.jquerymobile.com/ (Links to an external site.) 
+        Mobile Widgets in jQM - http://api.jquerymobile.com/category/widgets/ (Links to an external site.)
+        
+        Switching Pages in jQuery Mobile
+        Switching Pages in jQuery Mobile
+        When you want to programmatically move between pages or dynamically load pages in jQuery there are several methods that we can use. The recommended method is the PageContainer change( ) method.
+        Related to this is the ability to load/create new widgets in a page. After you load pages or widgets you may need to refresh the widget or the page. There are events that we can tie into to trigger the refresh or to cause the refresh.
+        There are two main objects that we will work with in our SPA. The PageContainer holds all our Page objects.
+        Page Widget reference - http://api.jquerymobile.com/page/ (Links to an external site.)
+        PageContainer widget reference - http://api.jquerymobile.com/pagecontainer/ (Links to an external site.) 
+        path method reference - http://api.jquerymobile.com/category/methods/path/ (Links to an external site.) 
+         
+        The PageContainer object has a method called change( ) which will "load" the new Page into view for the user.
+         
+        Lynda.com jQuery Mobile Videos
+        http://www.lynda.com/jQuery-Mobile-training-tutorials/1044-0.html (Links to an external site.)
+         
+        Switching Between Existing <div>s
+        The simplest way to navigate between the <div data-role="page"> elements is to use anchor tags.
+        <a href="#contact" data-role="button">Contact page</a>
+         
+        This anchor will take you to the data-role page div with the id="contact". The data-role="button" will style it to look like a mobile interface button. A data-theme attribute can also be added if you want to override the theme from the page.
+        Sometimes you will want to navigate between data-role page divs without having a value in the href of your anchor tag. Maybe you have some code that needs to fetch some ajax data before you move to the next page. The user will click a data-role button anchor and then you run your code. Once your code is finished then we will tell jQuery Mobile to load the new page.
+        See this codePen for examples of both types of navigation - http://codepen.io/mad-d/pen/blrIh (Links to an external site.) 
+        The jQuery Mobile method we will use to load the new page is this:
+        $.mobile.pageContainer.pagecontainer("change", "#contact", {userCount:12});
+        We are loading the data-role page div with id="contact" and passing along the data object {userCount:12} which can be used on the next page.
+         
+        Loading External Pages
+        This is being re-written....
+         
+        Secret link
+        http://faculty.edumedia.ca/griffis/ebook/Pro-jQuery-Mobile.pdf (Links to an external site.) - shhhh. Don't tell anyone.
+         
+        Creating & Refreshing New Widgets
+        Sometimes you are dynamically creating new content to display on a page and you would like to have JQM enhance the new content. There are events for refresh and create that we can programmatically trigger which will help us do this.
+         The first basic thing that you can do is to add the proper data-roles and CSS classes to the elements as you add them to the page.
+        $("#output").html("<ul data-role="listview" class="ui-list-view"> </ul>");
+        This would be an example of adding a new listview to a page that has already been enhanced. If you are not sure of what the proper classname is for the CSS and you are too tired to look through the online documentation to find it. You can use the built-in web development tools in Chrome or Firebug to see the html source for a generated element. Just hand code a listview in your page then view it in the browser tool. You will be able to see the CSS class added by JQM.
+        Here is an alternate way to create and enhance new JQM widgets.
+         $("<ul data-role="listview"><li>Item</li></ul>").appendTo("#myContentDiv").trigger("create");
+        Notice the trigger method at the end of the chain which calls on the create event.
+         
+        Adding Event Listeners with bind, live, delegate and on
+        Here are two good resources for understanding the differences between bind, live, delegate and on.
+        http://www.alfajango.com/blog/the-difference-between-jquerys-bind-live-and-delegate/ (Links to an external site.)
+        http://www.elijahmanor.com/2012/02/differences-between-jquery-bind-vs-live.html (Links to an external site.) 
+        If that is too much and you want the tl;dr version - 
+        Use on(). Like this:
+        $(document).on("click", "#myObject", function( ev ){  });
+        Replace "click" with your chosen event. Replace "#myObject" with the thing to be clicked.
+        BTW, there is also an off( ) method for removing events.
+        Note: live( ) was deprecated in version 1.7.
+         
+         
+        Page Loading Events
+        When working with standard web pages we started all our scripts after the $(document).ready() event was fired.
+        With JQM we actually have MANY more events that happen in the process of loading and moving through the divs. The document ready event only fires one time, when the html, css and javascript have loaded. The point where the DOM is ready to play.
+        In JQM we start with the mobileinit event. This happens when jQuery and jQuery Mobile scripts have loaded and are ready to be used. At this point we can set default values for various JQM global properties like the message to display while a page is loading or if a page fails to load, the text to display on a back button, how long the delays for touch events should be, whether or not we want to use AJAX to load any pages, etc.
+        $(document).bind("mobileinit", function( ){
+            $.mobile.loadingMessage = "Wait for it...";
+        });
+        After the mobileinit event fires we have a series of "page" events.
+         
+        This diagram does a better job illustrating the sequence of the events than my thousand words.
+        Basically, what this means for us is that we will:
+        1. Use the mobileinit event to set default properties and bind event listeners to the document object using the on( ) method.
+        2. Use the pageinit event to handle things on a specific page when it is initially created.
+        3. Use the pageshow event to handle things every time you switch to a page.
+         
+        Code Sample
+        Here are a couple of HTML files with the JQM CSS and script and a custom script that demonstrates how to work with three built in "page"s and one external file so you can move back and forth between them and use events to know when things happen.
+        You MUST run this through localhost for it to work properly.
+        jQuery Mobile Events
+        jQuery Mobile Touch and Orientation Events
+        While standard browsers all have events that we are used to - click, mouseover, submit, load, etc, mobile devices also have a couple categories of events that you don't normally use on a desktop or laptop. These are the touch events and the orientation event.
+        http://api.jquerymobile.com/category/events/ (Links to an external site.) - list of events
+         
+        Touch Events
+         The touch events available to us through jQuery Mobile are tap, taphold, swipe, swipeleft and swiperight. Tap is a quick touch. Taphold is touching and leaving your finger in the same place. Swipe is a vertical swipe of the finger. Swipeleft and swiperight and quick left or right flicks with your finger.
+        $("#myObject").bind("taphold", function(ev){
+            //this will run when the person touches and leaves their finger there for one second or more
+        });
+        The swipe event actually has a few properties that you can set.
+        scrollSupressionThreshold - 10px minimum distance to be travelled.
+        durationThreshold - 1000 milliseconds longest time for a flick to be touching the screen
+        horizontalDistanceThreshold - 30px max distance to be covered by a finger flick
+        verticalDistanceThreshold - 75px max distance covered by finger flick else this is a scroll
+         
+        Orientation Event
+         The orientation event is for determining the current portrait or landscape orientation of the device. We have to wait for the document.ready( ) event in order to add the orientationchange event.
+        $(document).ready(function(ev){
+        
+           $('body').bind('orientationchange', function(ev){
+               console.log( ev.orientation );
+           });
+        
+           $("body").trigger('orientationchange');
+        
+        });
+        If we add the orientationchange event to the body element then we have access to the event object which will contain a property called orientation. It will have either the value "portrait" or "landscape".
+        Scrolling Events
+        Scrolling has two events - scrollstart and scrollend. both are bound to the body element AFTER the document.ready() event fires. 
+        $(document).ready(function(ev){
+        
+           $('body').bind('scrollstart', function(ev){
+               console.log( "started to scroll" );
+           });
+         
+           $('body').bind('scrollend', function(ev){
+               console.log( "stopped scrolling" );
+           });
+        
+        });
+        Sometimes there are pages that load really long lists of content with AJAX. However, they don't want to load everything at the same time. So, these pages wait for the scroll to occur. Once the scroll starts you can start checking to see how far they have scrolled. Once they pass your last row of items then you can do another AJAX call to fetch more. To calculate the positioning they compared the current scrolled position of the screen with the position of the last item.
+        $(window).scrollTop( ) + $window.height( );
+        $(this).position( ).top + $(this).height( );
+        The above code will get you those two values, assuming that $(this) is referring to that last item you want to test.
+        
+        Using localStorage
+        Using localStorage
+        When you want to save information within the browser, for later use, cookies were originally the only option. Now we have localStorage. With localStorage we can store up to roughly 5MB of data for our website.
+        The biggest limitation that we have to work with is the fact that localStorage saves EVERYTHING as a String. Booleans become strings, Numbers become strings, Arrays must be turned into Strings. So, that cool JSON object that you are working with can be saved locally but it must first be turned into a String.
+        JSON Support
+        In the last few years support for the JSON object has been added to the native Javascript in the browsers. As long as you are not supporting browsers more than 2 or 3 years old then you can use the JSON object to convert between strings and Arrays or Objects. 
+        var myArray = ["Hello World", "Good Night Moon", "Hello Kitty", "Hello Sailor"];
+        var myJson = JSON.stringify( myString );
+        //now we can use the myJson variable inside of localStorage or a JSON file.
+        We can also covert back into an Object, Array or Number using the JSON object
+        var backToArray = JSON.parse( myJson );
+         
+        Coding localStorage
+        Using localStorage is similar to having a list of variables. The variable names are called the keys and the strings that you place inside these keys are called the values. So, we are working with key - value pairs. 
+        The basic methods for the localStorage object are as follows:
+        window.localStorage.setItem("name", "George");  //to save a value in a key
+        localStorage.setItem("home", "Jungle");  //also works without "window" in front
+        localStorage.getItem("home");   //would return "Jungle"
+        localStorage.removeItem("home");   //gets rid of the key called "home"
+        localStorage.clear( );   //deletes ALL the keys for your domain.
+         
+        With these methods we can put values into localStorage or retrieve or delete them. There is also an alternative way of getting or setting values in keys. This uses the same square bracket syntax we use for arrays. (This works for other objects in Javascript too).
+        localStorage["name"];    //this would return homeless "George"
+        localStorage["home"] = "suburbs";   
+        //This creates  a new key called "home" and gives it the value "suburbs"
+         
+        If we were going to store a list in an array then we would: create the array; convert it to a string with JSON; place the string into a localStorage key. 
+        var food = ["pizza", "roast chicken", "squid", "cow"];
+        var strFood = JSON.stringify( food );
+        localStorage.setItem("food", strFood);
+         
+        If we then wanted to add something to our list of food and update it in localStorage we would; retrieve the value of the key from localStorage; convert from string to array; add the new item to the list; repeat the original steps to insert it back.
+        var foodArray= JSON.parse( localStorage.getItem("food") );
+        foodArray.push( "cheese" );
+        foodArray.push( "apples" );
+        var strFood = JSON.stringify( foodArray );
+        localStorage.setItem("food", strFood );
+         
+        Now we have a list of six foods in the localStorage item called "food". 
+         
+        Older Browsers and Arrays
+        Before we had JSON we needed to do our own conversion between Strings and Arrays. There are other built-in methods for doing this. We can still use those now.
+        To convert a String into an Array we use the split method.
+        var sentence = "This is an example of a sentence";
+        var sentenceArray = sentence.split(" ");
+         
+        Notice the space between the quotation marks? That is the delimiter that Javascript uses to break up the string into individual elements to place into an array. If the delimiter is not found then you will have an array containing only one item. The spaces will be lost during the conversion.
+        To convert from an array into a string we use the join method.
+        var homesArray = ["Ottawa", "Winnipeg", "Moscow", "London", "Edinburgh"];
+        var homeString = homesArray.join(" and ");
+         
+        This will convert homesArray into a string and place " and " between each of them, resulting in a string that looks like this:
+        Ottawa and Winnipeg and Moscow and London and Edinburgh
+        
+        Local Data Storage
+        Web Storage
+        LocalStorage and SessionStorage
+        In the early days of the internet and browsers the ability to save information on the users' computer was extremely limited. All you could do was to create a cookie. Cookies had very limited storage ability and were a bit cumbersome to work with through code.
+        One of the Javascript capabilities added in HTML5 is the ability to store larger amounts of information in the browser for either a session or on a more permanent basis. The localStorage object saves large amounts of data in a JSON format for extended periods of time. The sessionStorage object is able to save large amounts of data only for the period of time that the user remains on a website, until they close their browser.
+        http://caniuse.com/#feat=namevalue-storage (Links to an external site.) 
+        This is the link to the Can I Use website that details when certain HTML5 features can be used in different browsers.
+        Both objects have the same properties and methods. The main difference is just how long the information is saved for.
+        They both operate in a key - value way. You can create a key, which is like a variable name. Then that key will point to a specific value. We can loop through the storage object keys and values. We can search for the existence of a specific key. We can create new keys and we can update a key to hold a new value.
+        It is important to remember that all the information in either storage object will be saved AS A STRING. Just like in a JSON object the keys and values are all simple numbers or strings.
+        
+        Test For Support
+        Before you can use either the localStorage or the sessionStorage object then we need to make sure the browser supports it. As a developer we can check out various websites to see which browsers use it. However, there is no way that we can guarantee only browsers from that list will visit our site or app. So, we need to check through code.
+        if( 'localStorage' in window ){
+            //if we get to this point it means that localStorage is available
+        }
+        if( 'sessionStorage' in window ){
+            //if we get to this point it means that sessionStorage is available.
+        }
+        Thankfully, we do not have to check for both. If a browser supports one of them then it supports both.
+        Another way of doing this is with this snippet:
+        if(localStorage){ 
+          //this works because localStorage is an object directly inside the window object 
+        }
+         
+        Once we have verified the browser's ability to use web storage then we can start. There are three main methods to use. Let's say that a user just finished playing our game on a web page and we want to save his high score in localStorage so that it will be ready for retrieval at a later time and date.
+        localStorage.setItem("highscore", 45750 );
+        //this creates or updates the highscore item inside the localStorage object
+        localStorage.getItem( "highscore" );
+        //this retrieves the value of the highscore item
+        localStorage.removeItem( "highscore" );
+        //this would delete the item called highscore from the localStorage object
+         
+        Treating Storage Objects Like Arrays or Objects
+        Thanks to the way Javascript and the web storage works we can also handle localStorage or sessionStorage like we were accessing information from a JSON object.
+        To create the highscore key and give it a value the object way:
+        localStorage["highscore"] = 45750;
+        To find the value of the highscore key;
+        var hs = localStorage["highscore"];
+        To delete the highscore key from the localStorage object
+        localStorage["highscore"] = null;
+         
+         
+        Tracking Updates to Keys
+        Web storage objects have an event called "storage". This allows us to track updates / changes made to the information stored in the object. Here is a sample script which handles the scenario where there was an old high score that the user just beat.
+        var oldHS = 0; 
+        var newScore = 0; 
+        window.onload = function( ){    
+          localStorage.onstorage = updateScore;     
+          oldHS = localStorage.getItem("highscore");
+         }
+        function updateScore( ){
+            newScore = localStorage.getItem("highscore");
+            if( newScore > oldHS ){
+                localStorage.setItem("highscore", newScore);
+                alert("Congratulations! You have the new high score");
+            }else{
+                alert("Sorry. You did not achieve a new high score");
+            }
+        }
+         
+        The above example illustrates the basic idea behind getting and setting values in localStorage and triggering functions based on the update of the information in localStorage. Unfortunately, the onstorage event doesn't fire for most browsers if you do it in the same page as your existing web page. You actually need to temporarily open a new window and set the storage there. That means if people have popups blocked then your onstorage event will fail to trigger the code.
+        Here is a sample web page with an example implementation of some localStorage possibilities.
+        local-storage.tar 
+        There are a few important things to highlight in this example file. When using the onstorage event, it will only be triggered if the update / change occurred on another page. So, on page one we have an event listener for onstorage. On page two we actually change the value inside the localStorage object. Now, on page one the function connected to the onstorage event will fire.
+        So, the way I worked around this limitation in the example web page is by dynamically creating a web page, setting the localStorage value within that page and then closing that dynamically created page.
+        Another thing to note about localStorage and sessionStorage is that you are limited to 5MB per domain worth of storage.
+        Next, in the function which is triggered by the onstorage event, the first line is:
+        if (!e) { e = window.event; }
+        This line is checking to see if there is anything inside the e variable which is passed to the function. There will be in all the non-IE browsers. In Internet Explorer instead of passing an event object to the variable e, it has an event object inside the window object. So, we look for the passed in variable e and if it is not there then we pass the contents of the window.event property into the e variable.
+        Finally, inside the init function we are using a different bit of code to connect a function to the onstorage event.
+        if (window.addEventListener) {
+            window.addEventListener("storage", updateScore, false);
+         } else {
+            window.attachEvent("onstorage", updateScore);
+         };
+        The reason I did this instead of simply
+        window.onstorage = updateScore
+        is to show this alternate syntax and the possibilities it provides. With this syntax we can actually add more than one function to an event. To illustrate, take this example:
+        var x = document.querySelector("#x");
+        x.onclick = funcOne;
+        x.onclick = funcTwo;
+        x.onclick = funcThree;
+        If we used this code then a user clicking on the element with the id x will make funcThree run. funcOne and funcTwo will NOT run. They will have been replaced with funcThree.
+        If we use the addEventListener / attachEvent syntax then we could make ALL THREE functions run with the single click.
+        var x = document.getElementById("x");
+        if (window.addEventListener) {
+            x.addEventListener("click", funcOne, false);
+            x.addEventListener("click", funcTwo, false);
+            x.addEventListener("click", funcThree, false);
+         } else {
+            x.attachEvent("onclick", funcOne);
+            x.attachEvent("onclick", funcTwo);
+            x.attachEvent("onclick", funcThree);
+         };
+        This code would add ALL THREE functions
+        
+        jQuery Mobile Forms
+        jQuery Mobile Forms
+        A big part of any web application are the form elements. Without the ability to collect information from the user most applications are nothing more than a series of pages of text and images. Real interactivity comes from being able to suck out their personal information so you can sell that for some real money... or... maybe just gathering information to make the user experience in your app a bit more personalized.
+        
+        HTML Form Elements
+        To begin with, all the form elements in jQuery are just HTML form elements. JQM does enhance things and make them look nicer. JQM and jQuery do give us some methods to make working with the data a bit easier too.
+        Here are the original HTML form elements:
+        <label for="email">Email</label>
+        
+        <input type="text" name="email" id="email" value="" />
+        <input type="password" name="pass" id="pass" value="" />
+        <input type="hidden" name="secret" id="secret" value="" />
+        <input type="checkbox" name="alive" id="alive" value="yes" />
+        <input type="radio" name="flavour" id="flavour" value="chocolate" />
+        <input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+        <input type="button" name="btn" id="btn" value="Click Me" />
+        <input type="reset" name="btnReset" id="btnReset" value="Clear Form" />
+        <textarea name="comments" id="comments">Please type here</textarea>
+        <select name="cities" id="cities" >
+            <optgroup label="ontario">
+                <option value="ottawa">Ottawa</option>
+                <option value="hawkesbury">Hawkesbury</option>
+            </optgroup>
+            <optgroup label="Manitoba">
+                <option value="winnipeg">Winnipeg</option>
+            </optgroup>
+        </select>
+        That is the basic list of elements. There are of course many more attributes that we can add to these to enhance them. Here are some examples.
+        For type="text"
+        maxlength="50" - maximum number of characters
+        readonly="readonly" - it cannot be edited but will be submitted
+        disabled="disabled" - it cannot be edited and will not be submitted
+        For type="checkbox", type="radio"
+        checked="checked" - if the button is checked
+        readonly="readonly" - it cannot be edited but will be submitted
+        disabled="disabled" - it cannot be edited and will not be submitted
+        For <select>
+        multiple="multiple" - if users are allowed to pick more than one option
+        size="5"   - how many rows of the list to show
+        readonly="readonly" - it cannot be edited but will be submitted
+        disabled="disabled" - it cannot be edited and will not be submitted
+        For <option>
+        selected="selected"  - which option is currently selected
+        NB: The attributes that have a value which is the same as the name you can actually just write the name of the attribute, like selected. The fact that the attribute is there at all is what activates it.
+         
+        HTML5 Form Features
+        Along with the arrival of HTML5 came a series of brand new form features. This greatly enhanced the usability of forms and reduced the Javascript workload of developers.
+        Actually, the new form features added in HTML5 are not new tags but new attributes and new values for the <input> tag type attribute. The new input tag variations are:
+        <input type="number" name="price" id="price" value="50" min="10" max="200" step="10" />
+        <input type="email" name="email" id="email" placeholder="Non-hotmail email address" autocomplete="off" />
+        
+        <input type="tel" name="phone" id="phone" placeholder="613-727-4723" />
+        
+        <input type="date" name="dob" id="dob" placeholder="yyyy-mm-dd" min="2012-01-01" required />
+        <input type="search" name="search" id="search" placeholder="keyword" />
+        <input type="url" name="homepage" id="homepage" placeholder="start with http://" />
+        <input type="datetime" name="appointment" id="appointment" /> - may show a datepicker
+        
+        <input type="color" name="bg" id="bg" /> - will show a colour picker.
+        Here is the full list from the W3C - http://dev.w3.org/html5/spec/single-page.html#attr-input-type (Links to an external site.)
+        Notice that there are a few other attributes added in these examples: placeholder - for the example text that disappears when users click to type; autocomplete - to tell the browser whether or not to fill in whatever was filled in last time; min - to set a minimum value for dates and numbers; max - to set a maximum value for dates and numbers; step - to set up an increment value for the numbers, times and dates. 
+        One of the cool enhancements to the forms actually is related to mobile devices. If you use the appropriate input type then the device will display a custom keyboard which is best suited to filling in that field. The URL, number, tel and email types benefit most from this. 
+        Closely linked to the type="date" field is a new HTML5 element <time> which lets you write a formatted date and/or time on a webpage and then add the semantic tags so search engines and screen readers can recognize it as a date / time.
+        <time datetime="2009-11-13">13<sup>th</sup>November</time>
+        Here is a good article about the time element - http://www.brucelawson.co.uk/2012/best-of-time/ (Links to an external site.)
+         
+        jQuery Mobile Form Methods
+        jQuery and jQuery Mobile have provided a bunch of methods to make it easier for us to work with forms.
+        When you submit a form then the data is sent to the web server as a series of name/value pairs. The "name" attribute and the "value" attribute values will be sent to the server. Sometimes though we want to gather all this information and send it to a server-side web page via AJAX. To do this in Javascript ourselves and take quite a few lines of code which will depend on the size of the form.
+        With jQuery we can actually call a single method to package all that data for us.
+        <form name="myForm" id="myForm" method="post" action="process.php"></form>
+        Using this form tag around all our form elements we can reach them all and package them.
+        var data = $("#myForm").serialize( );
+        Now we can use the data variable as a container for all the data from that form.
+        If we want to find data from a single form element, like a search field
+        <input type="search" name="search" id="search" value="" />
+        $("#search").val( );
+        The val( ) method will fetch whatever the user typed inside that field.
+        If we want to add an event handler to a form field we can use the change( ), blur( ), focus( ), or select( ) methods to trigger a function. Here is an example which would run when the user finishes filling out a username field and hits tab to move to the next field in the form.
+        $("#username").blur( function( ev ){
+            console.log( $(this).val( ) );
+            //this will write the value from the username field to the console panel
+        });
+         
+
+
+
+    </div>
+
+	</section>
+
+    <footer class="foot">
+    	<p>&copy; 2014 Paul Harvey.</p>
+        <p>Photographs and pictures are royalty free from morguefile.com.  All elements designed by Paul Harvey.</p>
+    </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

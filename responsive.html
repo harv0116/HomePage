@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Abel|Tinos" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+
+<title>Paul Harvey - Responsive Web Design</title>
+</head>
+
+<body>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="wrapper">
+	<header class="masthead7">
+    	
+    </header>
+    
+	<nav>
+        <a class="toggleMenu" href="#">Paul Harvey Menu</a>
+        <ul class="nav">
+        	<li class="test">
+            <a href="index.html">Home</a>
+            <li  class="test">
+            <a href="#">Courses</a>
+            <ul>
+                <li>
+                    <a href="#">Semester One - Sept 2014</a>
+                    <ul>
+                        <li><a href="mad9010.html">Graphics Technologies</a></li>
+                        <li><a href="mad9013.html">Cross Platform Web Design</a></li>
+                        <li><a href="mad9014.html">Cross Platform App Design I</a></li>
+                        <li><a href="mad9111.html">Computer Hardware and Networking</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Semester Two - Jan 2015</a>
+                    <ul>
+                        <li><a href="#">User Interface Design</a></li>
+                        <li><a href="#">Object Oriented Programming</a></li>
+                        <li><a href="#">Cross Platform App Design II</a></li>
+                        <li><a href="#">Server Side Tech for Mobile</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <a href="#">Learning</a>
+            <ul>
+                <li><a href="responsive.html">Responsive Web Design</a></li>
+                <li><a href="#">Javascript / JQuery / JQueryUI / JQuery Mobile</a></li>
+                <li><a href="#">HTML 5 / CSS / SASS-SCSS / Bootstrap</a></li>
+                <li><a href="#">Ajax / JSON</a></li>
+                <li><a href="#">Illustrator / Photoshop / SVG</a></li>  
+                <li><a href="#">LAMP / MAMP / WAMP</a></li>
+                <li><a href="#">Networking / VMWare / GIT</a></li>
+                <li><a href="#">Cordova</a></li>       
+            </ul>
+            </li>
+            <li>
+            <a href="#">About</a>
+            <ul>
+                <li><a href="about.html">Career thus far</a></li>
+                <li><a href="#">Links</a></li>        
+            </ul>
+            </li>
+        </ul>
+	</nav>
+    
+    <section class="maintitle">
+    	<h1>Responsive Web Design</h1>
+    </section>    
+    
+    <section class="focal row">
+    <div class="col-1">
+        <h3>@media Attribute</h3>
+        <h5>CSS @media Attribute</h5>
+        <p>Back in CSS version 2 there was a new attribute created called @media.</p>
+        <p>This let us target specific output modes for our CSS. We could create stylesheets for print only, for tv, for screen readers or for general web browsers.</p>
+        
+        <pre><code>&lt;link href=&quot;main.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;</code></pre>
+        <pre><code>&lt;link href=&quot;print.css&quot; rel=&quot;stylesheet&quot; media=&quot;print&quot; /&gt;</code></pre>
+        
+        <p>With those two link tags added we would have a stylesheet that applies to the web pages in the browser as well as in all other situations - main.css. We also have a stylesheet that would only apply when the pages are being printed.</p>
+        <p>Print stylesheets are used to typically hide things that a user would not want to print. It can get rid of background image, remove advertisements, hide navbars and footers, or get rid of extra colours to save the end user ink.</p>
+        <p>The possible values for the old media attribute were - <a href="http://www.w3.org/TR/CSS2/media.html"> http://www.w3.org/TR/CSS2/media.html</a></p>
+        <p>If you wanted, you could put the CSS for both values inside the same CSS file.</p>
+        <p>Inside the main.css file we could keep the same content as before. Then, at the bottom of the file we would add this:</p>
+        <pre><code>@media print{ 
+          /** all the css for print styles go inside the curly braces **/ 
+        }</code></pre>         
+         
+        <h5>CSS3 use of the @media attribute</h5>
+        <p>When CSS3 came out it meant that a collection of new values for @media were added. These values were all aimed at deploying websites for different devices and for different sized screens.</p>
+        <p>We can still use the old values - all, screen, print, etc. but there are new ones that are more useful to us in creating layouts for different sized screens.
+        min-width and max-width are the first two. Here is how we could use them inside a css file.</p>
+        <pre><code>@media all and (max-width: 960px) and (min-width: 500px){
+          /* This css is only applied if the screen width is between 500px and 960px */
+          .wrapper{
+            width: 90%;
+          }
+          .main{
+            float:left;
+            width: 60%;
+          }
+        }</code></pre>       
+        <p>The widths for the wrapper class and main class are only going to be applied IF the width of the screen is between those two values.</p>
+        <h3>Media Queries</h3>
+        <h5>CSS3 Media Queries</h5>
+        <p>Using the @media command with CSS3 is called a media query. We can use media queries inside the HTML link tag or inside our CSS files.</p>
+        <p>Here is the list of possible properties that we can include in a media query - <a href="http://www.w3.org/TR/css3-mediaqueries/#media1"> http://www.w3.org/TR/css3-mediaqueries/#media1</a></p>
+         
+        <p>Here are two great tutorials with graphic examples of how to use media queries to create multiple versions of the same website in order to be displayed on different sized screens.</p>
+        <ul><li><a href="http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries"> http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries</a> </li> 
+        <li><a href="http://mobile.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/"> http://mobile.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/</a>	</li></ul>
+         
+        <p>At a minimum we are designing different versions of a layout for different screen widths.</p>
+        <p>We are not just changing column widths though. We need to rearrange elements to best utilize the available screen space. The number of columns will change. Sometimes we will change the sizes of images or the alignment of elements.</p>
+        <p>Here is a sample page that you can use to test how this works. Feel free to download the HTML, CSS and images to try your own copy that you can edit, or even just use the developer tools in Chrome to see what effect changing the CSS has. You can simply resize the browser window to see the layout change.</p>
+        <p><a href="http://faculty.edumedia.ca/griffis/mad9013/media-query-sample/index.html"> http://faculty.edumedia.ca/griffis/mad9013/media-query-sample/index.html</a></p>
+                  
+        <h5>Mobile First</h5>
+        <p>Mobile First was a term coined by Luke Wroblewski - <a href= "http://www.lukew.com/resources/mobile_first.asp"> http://www.lukew.com/resources/mobile_first.asp</a>. It was the name of a book that he wrote which encourages designers to design their media queries  starting with the layout for small mobile devices. In your CSS file make the default styles ones that will be used by the small screens. The media query styles will add or alter your CSS for the larger screens.</p>
+        <p>This is now the recommended approach for "Responsive Design".</p>
+        <p>Responsive Design is the name for the technique of using multiple media queries to change elements of your design at different break points. You can use as many break points as you want. You can create a break point to change a single CSS property for one element if you need.</p>
+         
+        <h5>More on Media Queries</h5>
+        <p>Here is a page with some code samples using media queries - <a href="https://github.com/algonquin-design/html-css/tree/master/media-queries"> https://github.com/algonquin-design/html-css/tree/master/media-queries</a></p>
+        <p>The page also talks about using the em unit for widths to keep the page sized proportionally to the font-size.</p>
+        <p>Here are the videos used to demonstrate the code - <a href="https://www.youtube.com/playlist?list=PLWjCJDeWfDdeqVQIGvk_yAd-O_Y3aY-z7"> https://www.youtube.com/playlist?list=PLWjCJDeWfDdeqVQIGvk_yAd-O_Y3aY-z7</a></p>
+        <h3>Using Grids in your Designs</h3>
+        <h5>Using Grids in your Design</h5>
+        <p>When designing your web page layouts we want to make sure that things are always aligned, both vertically and horizontally. By using a grid made of columns we can measure our spacing on our designs to be consistent with our alignment.</p>
+        <p>The 960 grid system is a website that provides plugins for Photoshop that will draw the grids for you to use above or behind your layout comps. It also has a javascript bookmarklet that you can use in the browser to test the layout with your CSS and HTML. <a href="http://960.gs/"> http://960.gs/</a> is the site. Also check out <a href="http://grids.heroku.com/"> http://grids.heroku.com/</a> to work with grids at widths other than 960px.</p>
+        <p>The 960.gs bookmarklet lets you save a peice of Javascript as a bookmark in your browser. Then while viewing your webpage in the browser you click the book mark to run the script on your page. The script will add an overlay of the grid columns to your page as well as a control box on the left hand side that lets you change the widths of the columns and gutters as well as the line-heights and the number of columns.></p>
+        <p>To save a bookmarklet from 960.gs simply click and drag the link to the Javascript from the page to your bookmark bar in the browser. The link on <a href="http://960.gs/"> http://960.gs/</a> looks like a button that says "Grid Overlay Bookmark".</p>
+        <p>If you want you can click and drag the link from here - <a href="http://gridder.andreehansson.se/"> http://gridder.andreehansson.se/ </a></p>       
+        <p>Using Grids in your design will help you create your mockups in Photoshop to be certain that everything is using the C.R.A.P. concept of Alignment.</p>
+        <h3>Flexible Grids</h3>
+        <h5>Responsive Design and Flexible Grids</h5>
+        <p>Responsive Design is a term that refers to creating designs that adjust themselves automatically to different sized displays. Not every monitor is the same size. Not every mobile device has the same capabilities let alone screen dimensions. Android alone has over 2000 different screen sizes <a href="http://opensignal.com/reports/fragmentation-2013">http://opensignal.com/reports/fragmentation-2013</a></p>.
+         
+        <p>There are three pillars to responsive design:</p><ol>
+        <li>Media Queries - used in your CSS to set properties that change at different screen sizes.</li>
+        <li>Flexible Grids - using percentages for widths in your CSS layout which keep everything properly spaced and aligned at different widths.</li>
+        <li>Flexible Media - using percentages to adjust images and videos so that they properly fit within your layout.</li>
+         </ol>
+        <p>Here is Chapter 2 from Responsive Web Design by Ethan Marcotte. - an excellent book if you want to explore these concepts further.</p>
+        <a href="responsive-web-design-Chapter2-Flexible-Grid.pdf">responsive-web-design-Chapter2-Flexible-Grid.pdf</a>  
+         
+        <h5>Want more on Grids? </h5>
+        <p>Here is a great page on Github with lots of grid examples
+        <a href="https://github.com/algonquin-design/html-css/tree/master/grids"> https://github.com/algonquin-design/html-css/tree/master/grids</a>
+        and here are the videos used to demonstrate those code samples
+        <a href="https://www.youtube.com/playlist?list=PLWjCJDeWfDdeUChfM6TV2U7jzQVRjsu60"> https://www.youtube.com/playlist?list=PLWjCJDeWfDdeUChfM6TV2U7jzQVRjsu60</a></p>
+        <h3>CSS3 Flexbox</h3>
+        <h5>CSS3 Flexbox</h5>
+        <p>Part of CSS3 is the Flexbox module. This is a new layout module designed to help web designers and developers get past their reliance on the CSS float property. It also is an attempt to solve some difficult problems like having columns that are aligned to the top, bottom, or middle vertically or that need backgrounds of the same height.</p>
+        <p>The unfortunate thing is that Flexbox is not entirely ready for primetime. See - <a href="http://caniuse.com/#search=flexbox"> http://caniuse.com/#search=flexbox</a>
+        <p>Here is a site that covers some of the things that Flexbox can do - <a href= "http://philipwalton.github.io/solved-by-flexbox/"> http://philipwalton.github.io/solved-by-flexbox/</a>
+        <p>And here are a few other quick tutorials to get you started- 
+        <ul><li><a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/"> http://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+        <li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/an-introduction-to-css-flexbox/"> http://net.tutsplus.com/tutorials/html-css-techniques/an-introduction-to-css-flexbox/</a></li>
+        <li><a href="http://www.html5rocks.com/en/tutorials/flexbox/quick/">http://www.html5rocks.com/en/tutorials/flexbox/quick/</a></li></ul>
+        <h5>Other Modules and Layouts</h5>
+        <p>There are some other competing layout modules for CSS that are still being tested as well. Float layouts are what we commonly use. There is also inline-block layouts,grids, and column layouts.
+        Article about all the different types - <a href="http://www.markboulton.co.uk/journal/rethinking-css-grids"></a>http://www.markboulton.co.uk/journal/rethinking-css-grids</p>
+         
+        <h5>Columns</h5>
+        <p>For the column module see -</p> 
+        <ul><li><a href="http://learnlayout.com/column.html"> http://learnlayout.com/column.html</a></li>
+        <li><a href="http://playground.html5rocks.com/#columns"> http://playground.html5rocks.com/#columns</a></li>
+        <li><a href="http://css-tricks.com/almanac/properties/c/columns/">http://css-tricks.com/almanac/properties/c/columns/</a> </li>
+        <li><a href="http://www.w3.org/TR/css3-multicol/">http://www.w3.org/TR/css3-multicol/</a> </li>
+        <li><a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/an-introduction-to-the-css3-multiple-column-layout-module/">http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/an-introduction-to-the-css3-multiple-column-layout-module/</a> </li>
+        <li><a href="http://quirksmode.org/css/columns/">http://quirksmode.org/css/columns/</a></li>
+        <li><a href="http://dev.w3.org/csswg/css-multicol/">http://dev.w3.org/csswg/css-multicol/</a></li></ul>
+        <h5>Grids</h5>
+        <p>For more info on the grids module -</p> 
+        <ul><li><a href="http://css-tricks.com/almanac/properties/g/grid/">http://css-tricks.com/almanac/properties/g/grid/</a></li>
+        <li><a href="http://24ways.org/2012/css3-grid-layout/">http://24ways.org/2012/css3-grid-layout/</a></li>
+        <li><a href="http://dev.w3.org/csswg/css-template/">http://dev.w3.org/csswg/css-template/</a></li>
+        <li><a href="http://css-tricks.com/dont-overthink-it-grids/">http://css-tricks.com/dont-overthink-it-grids/</a></li>
+        <li><a href="http://hugogiraudel.com/2013/04/04/css-grid-layout/">http://hugogiraudel.com/2013/04/04/css-grid-layout/</a></li></ul>
+        <h3>Mobile First</h3>
+        <h5>Mobile First</h5>
+        <p>Mobile First is a term used to define an approach to responsive design. IF you want to create a series of media queries to use when designing your web pages at different widths then your default settings should be aimed at the 200px - 300px display range. Start with the smallest screen size you want to support, as your default.
+        The term was coined by Luke Wroblewski and it is the title of his book - <a href="http://www.abookapart.com/products/mobile-first">http://www.abookapart.com/products/mobile-first</a> 
+        Here are a couple of articles that cover the idea of Mobile First and its pros and cons.</p>
+        <ul><li><a href="http://designshack.net/articles/css/mobilefirst/">http://designshack.net/articles/css/mobilefirst/</a> </li>
+        <li><a href="http://www.copyblogger.com/mobile-first/">http://www.copyblogger.com/mobile-first/</a></li></ul> 
+        
+        <h3>Understanding Viewports</h3>
+        <h5>Understanding Viewports</h5>
+        <p>We have previously added those three &lt;meta&gt; tags to help mobile browsers render our webpages in a better manner.
+        The one we need to focus on most is </p>
+        
+        <pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;</code></pre>
+         
+        <p>This meta tag was introduced by Apple in the mobile version of Safari for the iPad. Since then it has spread to the iPhone, webkit in general and on. 
+        This page has a table that covers which browsers support this tag and which values for the content attribute - <a href ="http://www.quirksmode.org/mobile/tableViewport.html">http://www.quirksmode.org/mobile/tableViewport.html</a>
+        You can see by looking at the chart that there are many properties and support and implementation varies greatly. </p>
+         
+        <h5>What is a Viewport</h5>
+        <p>There are two basic viewports on mobile devices - Layout viewport and Visual viewport.</p>
+        <ul><li>Layout viewport - this is the size of your webpage's content. Let's say that you are designing a webpage and the screen to display it was 8 feet across. You are never going to use 8 feet of space. You will set some kind of constraints on the size. Maybe your wrapper is 1200px. That is your layout viewport. You set this size in your CSS.</li>
+        <li>Visual viewport - This is the amount of space that the phone is telling your webpage that is available to render your webpage. In the meta tag:
+        <pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;</code></pre>
+        the device-width value is the visual viewport as reported by the device. width is what you want to set the layout viewport to.
+        The device will try to scale your webpage so that 100% of its layout viewport matches 100% of the device-width reported by the device as the visual viewport.
+        You can set the width as an actual number but then you lose the benefit of rendering the way the device manufacturer thinks is an ideal size.
+        Peter-Paul Koch is an extremely well-respected researcher in web development and mobile development. He has written a series of articles about the viewports, device pixel ratios and the frustrating limitations of the device browsers. Read the first two articles. Then read them again. Read them repeatedly until you feel like you could explain these concepts to a six year old.</li></ul>
+        
+        <p>A Tale of Two Viewports (part one) - <a href="http://www.quirksmode.org/mobile/viewports.html">http://www.quirksmode.org/mobile/viewports.html</a></p>
+        <p>A Tale of Two Viewports (part two) - <a href="http://www.quirksmode.org/mobile/viewports2.html">http://www.quirksmode.org/mobile/viewports2.html</a></p>
+        <p>Lack of support for position:fixed on mobile browsers - <a href="http://www.quirksmode.org/blog/archives/2010/12/the_fifth_posit.html">http://www.quirksmode.org/blog/archives/2010/12/the_fifth_posit.html</a></p>
+         
+        <p>Webplatform.org also has a good article on viewports - 
+        <a href="http://docs.webplatform.org/wiki/tutorials/mobile_viewport">http://docs.webplatform.org/wiki/tutorials/mobile_viewport</a>
+         
+        <h5>Media Queries max-width and min-width</h5>
+        <p>When you add a media query with a max-width or a min-width you are setting test values against the width of the HTML element. The viewport meta tag will let you set the layout viewport width to a number or to the device width. That value is then compared to the media query max and min widths. </p>
+         
+        <h5>Device pixels and CSS pixels</h5>
+        <p>Now, devices don't always tell the truth about their width, height or orientation.</p>
+        <p>When you set a width on an element in your CSS file you are setting the width in CSS pixels. These are not necessarily the same as device pixels. You could have a phone with 960 physical pixels. The phone is telling you that its device-width is 480 device pixels. Your CSS width for your wrapper is 1200px. You have an image in the header that is set to width: 300px.</p>
+        <p>The CSS pixels for the image are 300.</p> 
+        <p>Our viewport meta tag is taking the 1200 CSS pixels for the layout viewport and scaling them to match 480 device pixels. Each of those pixels is actually two physical pixels. The device has a pixel density ratio of 2:1.</p> 
+        <p>Our image is 300 CSS pixels (one quarter of the total layout width). One-quarter of the device-width is 120px. Those 120px are actually covering 240 physical pixels on the device.</p>
+        <p>As the user pinches and zooms the number of CSS pixels remains the same but your number of physical or device pixels used to display the content changes.</p>
+         
+        <h5>CSS Viewport Units</h5>
+        <p>There was a new set of units that was added to CSS in 2013 that take advantage of the viewport measurements.</p>
+        <p><a href="http://caniuse.com/#search=viewport">http://caniuse.com/#search=viewport</a></p> 
+        <p><a href="http://www.quirksmode.org/css/units-values/viewport.html">http://www.quirksmode.org/css/units-values/viewport.html</a></p> 
+        <p>vw - viewport width</p>
+        <p>vh - viewport height</p>
+        <p>vmin - viewport min (use the smaller of the two measurements)</p>
+        <p>1.0vw means 1% of the viewport width.</p>
+        <p>2.8vh means 2.8% of the viewport height.</p>
+        <p>For more information on these units see:</p> 
+        <p><a href="http://snook.ca/archives/html_and_css/vm-vh-units">http://snook.ca/archives/html_and_css/vm-vh-units</a>  - Article by Ottawa's own Jonathan Snook</p>
+        <p><a href="http://css-tricks.com/viewport-sized-typography/">http://css-tricks.com/viewport-sized-typography/</a>  - by Chris Coyier</p>
+
+    </div>
+
+	</section>
+
+    <footer class="foot">
+    	<p>&copy; 2014 Paul Harvey.</p>
+        <p>Photographs and pictures are royalty free from morguefile.com.  All elements designed by Paul Harvey.</p>
+    </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
